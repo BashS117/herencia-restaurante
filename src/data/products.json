@@ -1,0 +1,64 @@
+[
+    {
+      "category": "Hamburguesas",
+      "products": [
+        { "name": "Clásica", "price":12, "image": "burger1.jpg" },
+        { "name": "Doble Carne", "price":15, "image": "burger2.jpg" },
+        { "name": "Mixta", "price":15, "image": "burger3.jpg" },
+        { "name": "Triple", "price":20, "image": "burger3.jpg" },
+        { "name": "Porción papa", "price":2, "image": "burger3.jpg" }
+      ]
+    },
+    {
+      "category": "Salchipapas",
+      "products": [
+        { "name": "Sencilla", "price":6, "image": "fries1.jpg" },
+        { "name": "Pollo", "price":8, "image": "fries2.jpg" },
+        { "name": "Tocineta", "price":8, "image": "fries3.jpg" },
+        { "name": "Pollo y Tocineta", "price":9, "image": "fries3.jpg" },
+        { "name": "Maiz y Pollo", "price":9, "image": "fries3.jpg" },
+        { "name": "Carne", "price":9, "image": "fries3.jpg" },
+        { "name": "Carne y Tocineta", "price":10, "image": "fries3.jpg" },
+        { "name": "Con chorizo", "price":11, "image": "fries3.jpg" },
+        { "name": "Familiar", "price":24, "image": "fries3.jpg" }
+      ]
+    },
+    {
+      "category": "Burritos",
+      "products": [
+        { "name": "Pollo", "price":9, "image": "fries1.jpg" },
+        { "name": "Carne", "price":10,  "image": "fries2.jpg" },
+        { "name": "Mexicano", "price":12, "image": "fries3.jpg" },
+        { "name": "De la Casa", "price":12, "image": "fries3.jpg" }
+      ]
+    },
+    {
+      "category": "Sandwich",
+      "products": [
+        { "name": "Pollo", "price":9, "image": "fries1.jpg" },
+        { "name": "Mixto",  "price":10, "image": "fries2.jpg" },
+        { "name": "Mexicano", "price":12, "image": "fries3.jpg" },
+        { "name": "Jamón", "price":8, "image": "fries3.jpg" }
+      ]
+    },
+    {
+      "category": "Aplastados",
+      "products": [
+        { "name": "Pollo", "price":9, "image": "fries1.jpg" },
+        { "name": "Mixto",  "price":10, "image": "fries2.jpg" },
+        { "name": "Mexicano", "price":11, "image": "fries3.jpg" },
+        { "name": "Jamón", "price":8, "image": "fries3.jpg" }
+    ]
+    },
+    {
+      "category": "Perros",
+      "products": [
+        { "name": "Sencillo", "price":8, "image": "fries1.jpg" },
+        { "name": "Pollo", "price":10, "image": "fries1.jpg" },
+        { "name": "Carne", "price":10,  "image": "fries2.jpg" },
+        { "name": "Mexicano", "price":12, "image": "fries3.jpg" },
+        { "name": "De la Casa", "price":12, "image": "fries3.jpg" },
+        { "name": "Mixto", "price":12, "image": "fries3.jpg" }
+      ]
+    }
+  ]
