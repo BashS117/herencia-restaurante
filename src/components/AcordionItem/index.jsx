@@ -16,24 +16,16 @@ console.log("state.panelOpen:", state)
             type: 'PANELOPEN', 
             payload: category
         });
-       
-      
       };
-      const PanelClose=()=>{
-        dispatch({ 
-            type: 'PANELCLOSE', 
-            payload: category
-        });
-      }
+
 
     console.log("datat:",data)
   return (  
     <div>
         <AcordionHeadingItem 
         category={category}
-        isPanelOpen={state.panelOpen}
+        isPanelOpen={state.panelOpen && state.selectedCategory === category}
         handlePanelOpen={handlePanelOpen}
-        PanelClose={PanelClose}
         />
          <AcordionPanel category={category} products={products}/>
        

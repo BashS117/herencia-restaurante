@@ -13,15 +13,10 @@ export const AppProvider =({children})=>{
     const reducerObject=(state,category)=>({
         'PANELOPEN':{
             ...state,
-            panelOpen: true,
+            panelOpen: state.selectedCategory !== category || !state.panelOpen,
           selectedCategory: category,
         },
-        'PANELCLOSE':{
-            ...state,
-            panelOpen: false,
-            selectedCategory: null,
-
-        },
+     
        
     })
 
