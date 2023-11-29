@@ -7,7 +7,7 @@ const AcordionPanel = ({ products,category ,rightPanel}) => {
     const {state}=useContext(AppContext)
 
     return (
-      <div className={`${rightPanel?'relative left-[-175px] w-[300px]':''} w-[160%] ${state.panelOpen && state.selectedCategory === category ? 'flex' : 'hidden'}`}>
+      <div className={`${rightPanel?'relative left-[-175px] w-[300px]':''} w-[160%] relative ${state.panelOpen && state.selectedCategory === category ? 'flex' : 'hidden'}`}>
         <ul className="w-[100%]">
           {products.map((product, index) => (
             <li className="bg-[#FF570C] mb-[10px]" key={index}>
