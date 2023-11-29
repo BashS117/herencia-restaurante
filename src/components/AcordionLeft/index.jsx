@@ -5,8 +5,8 @@ const AcordionLeft = () => {
     console.log(products)
  
   return (
-    <div>
-        aCORDEON LEFT
+    <div className='w-[60%]'>
+       
         {
             products.map((data)=>(
                 <AcordionItem key={data.index} data={data} />

@@ -16,9 +16,10 @@ export const AppProvider =({children})=>{
             panelOpen: state.selectedCategory !== category || !state.panelOpen,
           selectedCategory: category,
         },
-     
+    
        
-    })
+    }
+    )
 
     const reducer = (state,action)=>{
         if(reducerObject(state,action.payload)[action.type]){

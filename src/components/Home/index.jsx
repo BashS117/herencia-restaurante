@@ -4,7 +4,7 @@ import AcordionRight from '../AcordionRight'
 
 const Home = () => {
   return (
-    <div className='flex'>
+    <div className='flex mt-[10px] gap-[10px] w-full relative'>
         <AcordionLeft/>
         <AcordionRight/>
 

@@ -1,0 +1,47 @@
+[
+    {
+      "category": "Bebidas",
+      "products": [
+        { "name": "Sodas italiana", "price":6, "image": "burger1.jpg" },
+        { "name": "Limonada cereza", "price":6, "image": "burger2.jpg" },
+        { "name": "Limonada de Coco", "price":15, "image": "burger3.jpg" },
+        { "name": "Cocacola Lata", "price":3, "image": "burger3.jpg" },
+        { "name": "Cocacola Personal", "price":4, "image": "burger3.jpg" },
+        { "name": "Cocacola Litro", "price":7, "image": "burger3.jpg" },
+        { "name": "Cocacola 3LitroS", "price":10, "image": "burger3.jpg" },
+        { "name": "Hit Personal", "price":4, "image": "burger3.jpg" },
+        { "name": "Hit Caja", "price":6, "image": "burger3.jpg" },
+        { "name": "Cerveza Lata", "price":3, "image": "burger3.jpg" },
+        { "name": "Agua Botella", "price":2, "image": "burger3.jpg" }
+      ]
+    },
+    {
+      "category": "Granizados",
+      "products": [
+        { "name": "Sin Licor", "price":5, "image": "fries1.jpg" },
+        { "name": "Con Licor", "price":6, "image": "fries2.jpg" },
+        { "name": "Adi jeringa", "price":2, "image": "fries3.jpg" }
+      ]
+    },
+    {
+      "category": "Diferente",
+      "products": [
+        { "name": "Choripan", "price":7, "image": "fries1.jpg" },
+        { "name": "Picada mixta", "price":22,  "image": "fries2.jpg" },
+        { "name": "Papas y carne", "price":9, "image": "fries3.jpg" },
+        { "name": "Choripapa", "price":9, "image": "fries3.jpg" }
+      ]
+    },
+    {
+      "category": "Adiciones",
+      "products": [
+        { "name": "Queso", "price":1, "image": "fries1.jpg" },
+        { "name": "Maiz",  "price":1, "image": "fries2.jpg" },
+        { "name": "Tocineta", "price":2, "image": "fries3.jpg" },
+        { "name": "Guacamole", "price":2, "image": "fries3.jpg" },
+        { "name": "Chicharrón", "price":2, "image": "fries3.jpg" },
+        { "name": "Cebolla Dulce", "price":2, "image": "fries3.jpg" },
+        { "name": "Pico de Gallo", "price":2, "image": "fries3.jpg" }
+      ]
+    }
+  ]

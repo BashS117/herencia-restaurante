@@ -3,7 +3,7 @@ import AcordionHeadingItem from '../AcordionHeadingItem';
 import AcordionPanel from '../AcordionPanel';
 import { useContext } from "react";
 import { AppContext } from '../../Context/AppContext';
-const AcordionItem = ({data}) => {
+const AcordionItem = ({data,rightPanel}) => {
     
     const {category,products}= data;
 
@@ -27,7 +27,7 @@ console.log("state.panelOpen:", state)
         isPanelOpen={state.panelOpen && state.selectedCategory === category}
         handlePanelOpen={handlePanelOpen}
         />
-         <AcordionPanel category={category} products={products}/>
+         <AcordionPanel rightPanel={rightPanel} category={category} products={products}/>
        
 
 

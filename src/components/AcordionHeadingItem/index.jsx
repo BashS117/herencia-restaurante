@@ -5,7 +5,7 @@ const AcordionHeadingItem = ({category,handlePanelOpen,}) => {
         handlePanelOpen(category)
     }
   return (
-    <div onClick={handleClick} >{category}</div>
+    <div className='mb-[10px]  border-[1px] border-[#FF570C] rounded-lg' onClick={handleClick} >{category}</div>
   )
 }
 
