@@ -5,6 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      'white': '#F7F7F7',
+      'orange': '#FF570C',
+      'gray': '#606470',
+      'dark-gray': '#323643',
+   
+    },
     screens: {
       'sm': {'min': '320px', 'max': '767px'},
       // => @media (min-width: 640px and max-width: 767px) { ... }

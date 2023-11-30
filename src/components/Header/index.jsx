@@ -12,7 +12,7 @@ const Header = () => {
                 <p>Comidas Rapidas</p>
                 <p>Calle 5 #9-40 Corinto</p>
                 <p>Cel: 323 475 4284</p>
-                <ol className='text-[0.8rem]'>
+                <ol className='text-[0.7rem]'>
                     <li> Elige categoría y escoge tu producto</li>
                     <li> Envia tu pedido y espera tu domicilio</li>
                 </ol>

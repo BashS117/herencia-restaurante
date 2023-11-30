@@ -23,6 +23,7 @@ console.log("state.panelOpen:", state)
   return (  
     <div>
         <AcordionHeadingItem 
+        rightPanel={rightPanel}
         category={category}
         isPanelOpen={state.panelOpen && state.selectedCategory === category}
         handlePanelOpen={handlePanelOpen}
