@@ -8,8 +8,8 @@ const AcordionLeft = () => {
     <div className='w-[60%]'>
        
         {
-            products.map((data)=>(
-                <AcordionItem key={data.index} data={data} />
+            products.map((data,index)=>(
+                <AcordionItem key={index} index={index} data={data} />
             ))
         }
 
