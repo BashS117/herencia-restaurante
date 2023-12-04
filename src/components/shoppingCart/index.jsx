@@ -1,13 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Order from '../Order'
+import OrderCart from '../OrderCart'
 
 const ShoppingCart = () => {
   return (
     <div className='border border-orange rounded-lg'>
         <div className='flex justify-between items-center p-6'>
-          <h2 className='font-medium text-xl'>My Order</h2>    
+          <h2 className='font-medium text-xl'>Tu pedido</h2>    
         </div>
     <div className='px-6 overflow-y-scroll flex-1'>
+        <OrderCart/>
     {/* {cartProducts.map(product=>(
       <OrderCard 
       key={product.id}
