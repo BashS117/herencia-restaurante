@@ -4,8 +4,8 @@ import { useForm } from 'react-hook-form'
 const OrderForm = () => {
   const {register, handleSubmit}=useForm
   return (
-    <div className=' w-[350px] p-[5px]'>
-      <div className='flex flex-col items-start gap-1 mb-[10px]'>
+    <div className=' w-[full] text-left mb-3'>
+      <div className='flex flex-col  gap-1 mb-[10px]'>
           <label htmlFor="">Tipo de Pedido</label>
          <select name="" id="">
           <option value="domi">Domicilio</option>
@@ -15,12 +15,12 @@ const OrderForm = () => {
 
 
       <form className='border border-orange rounded-lg  p-[10px]' action="">
-        <div className=' flex flex-col items-start gap-1 mb-[10px]'>
+        <div className=' flex flex-col  gap-1 mb-[10px]'>
           <label htmlFor="">Nombre</label>
           <input className='w-full' type="text"  name=''/>
         </div>
       
-        <div className='flex flex-col items-start mb-[10px]' >
+        <div className='flex flex-col  mb-[10px]' >
           <label htmlFor="">Dirección</label>
           <div className='flex gap-2'>
             <select className='w-14' name="" id="">
@@ -37,8 +37,12 @@ const OrderForm = () => {
           </div>
       
         </div>
-        <div className='flex flex-col items-start'  >
-          <label htmlFor="">Barrio,Casa o punto de referencia?</label>
+        <div className='flex flex-col mb-2'  >
+          <label htmlFor="">Barrio, Casa o punto de referencia?</label>
+          <input className='w-full' type="text"  name=''/>
+        </div>
+        <div className='flex flex-col '  >
+          <label htmlFor="">Agrega notas a tu pedido y da click en "Enviar a WhatsApp"</label>
           <input className='w-full' type="text"  name=''/>
         </div>
       </form>
