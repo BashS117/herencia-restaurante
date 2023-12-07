@@ -10,6 +10,7 @@ export const AppProvider =({children})=>{
         cart: [], //elementos del carrito
 
     }  
+    console.log('cart:',initialState.cart)
 
     const reducerObject=(state,payload)=>({
         'PANELOPEN':{

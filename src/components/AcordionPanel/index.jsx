@@ -4,7 +4,22 @@ import { AppContext } from '../../Context/AppContext';
 
 const AcordionPanel = ({ products,category ,rightPanel}) => {
 
-    const {state}=useContext(AppContext)
+    const {state,dispatch}=useContext(AppContext)
+
+    //funcion para agregar  un producto al carrito 
+    const addToCart = (product)=>{
+      const itemToAdd = {
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        //otras propiedades
+      }
+      //Despacho la accion  add_to_cart con el item como payload
+      dispatch({
+        type:'ADD_TO_CART', 
+        payload: itemToAdd
+      })
+    }
 
     return (
       <div className={`${rightPanel?'relative left-[-175px] w-[300px]':''} w-[160%] relative ${state.panelOpen && state.selectedCategory === category ? 'flex' : 'hidden'}`}>
@@ -22,7 +37,7 @@ const AcordionPanel = ({ products,category ,rightPanel}) => {
                   <p>ver mas...</p>
                </button>
               </div>
-              <button>
+              <button  onClick={() => addToCart(product)}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
