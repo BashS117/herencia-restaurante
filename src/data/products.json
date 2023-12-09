@@ -2,63 +2,63 @@
     {
       "category": "Hamburguesas",
       "products": [
-        { "name": "Clásica", "price":12, "image": "burger1.jpg" },
-        { "name": "Doble Carne", "price":15, "image": "burger2.jpg" },
-        { "name": "Mixta", "price":15, "image": "burger3.jpg" },
-        { "name": "Triple", "price":20, "image": "burger3.jpg" },
-        { "name": "Porción papa", "price":2, "image": "burger3.jpg" }
+        { "id":1,"name": "Clásica", "price":12, "image": "burger1.jpg" },
+        { "id":2,"name": "Doble Carne", "price":15, "image": "burger2.jpg" },
+        { "id":3,"name": "Mixta", "price":15, "image": "burger3.jpg" },
+        { "id":4,"name": "Triple", "price":20, "image": "burger3.jpg" },
+        { "id":5,"name": "Porción papa", "price":2, "image": "burger3.jpg" }
       ]
     },
     {
       "category": "Salchipapas",
       "products": [
-        { "name": "Sencilla", "price":6, "image": "fries1.jpg" },
-        { "name": "Pollo", "price":8, "image": "fries2.jpg" },
-        { "name": "Tocineta", "price":8, "image": "fries3.jpg" },
-        { "name": "Pollo y Tocineta", "price":9, "image": "fries3.jpg" },
-        { "name": "Maiz y Pollo", "price":9, "image": "fries3.jpg" },
-        { "name": "Carne", "price":9, "image": "fries3.jpg" },
-        { "name": "Carne y Tocineta", "price":10, "image": "fries3.jpg" },
-        { "name": "Con chorizo", "price":11, "image": "fries3.jpg" },
-        { "name": "Familiar", "price":24, "image": "fries3.jpg" }
+        { "id":6,"name": "Sencilla", "price":6, "image": "fries1.jpg" },
+        { "id":7,"name": "Pollo", "price":8, "image": "fries2.jpg" },
+        { "id":8,"name": "Tocineta", "price":8, "image": "fries3.jpg" },
+        { "id":9,"name": "Pollo y Tocineta", "price":9, "image": "fries3.jpg" },
+        { "id":10,"name": "Maiz y Pollo", "price":9, "image": "fries3.jpg" },
+        { "id":11,"name": "Carne", "price":9, "image": "fries3.jpg" },
+        { "id":12,"name": "Carne y Tocineta", "price":10, "image": "fries3.jpg" },
+        { "id":13,"name": "Con chorizo", "price":11, "image": "fries3.jpg" },
+        { "id":14,"name": "Familiar", "price":24, "image": "fries3.jpg" }
       ]
     },
     {
       "category": "Burritos",
       "products": [
-        { "name": "Pollo", "price":9, "image": "fries1.jpg" },
-        { "name": "Carne", "price":10,  "image": "fries2.jpg" },
-        { "name": "Mexicano", "price":12, "image": "fries3.jpg" },
-        { "name": "De la Casa", "price":12, "image": "fries3.jpg" }
+        { "id":15,"name": "Pollo", "price":9, "image": "fries1.jpg" },
+        { "id":16,"name": "Carne", "price":10,  "image": "fries2.jpg" },
+        { "id":17,"name": "Mexicano", "price":12, "image": "fries3.jpg" },
+        { "id":18,"name": "De la Casa", "price":12, "image": "fries3.jpg" }
       ]
     },
     {
       "category": "Sandwich",
       "products": [
-        { "name": "Pollo", "price":9, "image": "fries1.jpg" },
-        { "name": "Mixto",  "price":10, "image": "fries2.jpg" },
-        { "name": "Mexicano", "price":12, "image": "fries3.jpg" },
-        { "name": "Jamón", "price":8, "image": "fries3.jpg" }
+        { "id":19,"name": "Pollo", "price":9, "image": "fries1.jpg" },
+        { "id":20,"name": "Mixto",  "price":10, "image": "fries2.jpg" },
+        { "id":21,"name": "Mexicano", "price":12, "image": "fries3.jpg" },
+        { "id":22,"name": "Jamón", "price":8, "image": "fries3.jpg" }
       ]
     },
     {
       "category": "Aplastados",
       "products": [
-        { "name": "Pollo", "price":9, "image": "fries1.jpg" },
-        { "name": "Mixto",  "price":10, "image": "fries2.jpg" },
-        { "name": "Mexicano", "price":11, "image": "fries3.jpg" },
-        { "name": "Jamón", "price":8, "image": "fries3.jpg" }
+        { "id":23,"name": "Pollo", "price":9, "image": "fries1.jpg" },
+        { "id":24,"name": "Mixto",  "price":10, "image": "fries2.jpg" },
+        { "id":25,"name": "Mexicano", "price":11, "image": "fries3.jpg" },
+        { "id":26,"name": "Jamón", "price":8, "image": "fries3.jpg" }
     ]
     },
     {
       "category": "Perros",
       "products": [
-        { "name": "Sencillo", "price":8, "image": "fries1.jpg" },
-        { "name": "Pollo", "price":10, "image": "fries1.jpg" },
-        { "name": "Carne", "price":10,  "image": "fries2.jpg" },
-        { "name": "Mexicano", "price":12, "image": "fries3.jpg" },
-        { "name": "De la Casa", "price":12, "image": "fries3.jpg" },
-        { "name": "Mixto", "price":12, "image": "fries3.jpg" }
+        { "id":27,"name": "Sencillo", "price":8, "image": "fries1.jpg" },
+        { "id":28,"name": "Pollo", "price":10, "image": "fries1.jpg" },
+        { "id":29,"name": "Carne", "price":10,  "image": "fries2.jpg" },
+        { "id":30,"name": "Mexicano", "price":12, "image": "fries3.jpg" },
+        { "id":31,"name": "De la Casa", "price":12, "image": "fries3.jpg" },
+        { "id":32,"name": "Mixto", "price":12, "image": "fries3.jpg" }
       ]
     }
   ]

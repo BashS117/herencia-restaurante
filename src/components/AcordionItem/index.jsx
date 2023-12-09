@@ -3,11 +3,14 @@ import AcordionHeadingItem from '../AcordionHeadingItem';
 import AcordionPanel from '../AcordionPanel';
 import { useContext } from "react";
 import { AppContext } from '../../Context/AppContext';
+
+
 const AcordionItem = ({data,index,rightPanel}) => {
     
     const {category,products}= data;
 
     const {state,dispatch}=useContext(AppContext)
+    
 console.log("state.panelOpen:", state)
 
     const handlePanelOpen = (category) => {        

@@ -22,10 +22,26 @@ export const AppProvider =({children})=>{
             ...state,
             cart:[...state.cart,payload],//añadir el elemento al carrito
         },
-        'REMOVE_FROM_CART': {
+        'INCREMENT_QUANTITY': {
             ...state,
-            cart:state.cart.filter(item=>item.id !=payload.id)//eliminar elemento del carrito
-        }
+            // Incrementar la cantidad del producto específico en el carrito
+            cart: state.cart.map(item =>
+              item.id === payload ? { ...item, quantity: item.quantity + 1 } : item
+            ),
+          },
+          'DECREMENT_QUANTITY': {
+            ...state,
+            // Decrementar la cantidad del producto específico en el carrito
+            cart: state.cart.map(item =>
+              item.id === payload.id ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1 } : item
+            ),
+          },
+          'REMOVE_FROM_CART': {
+            ...state,
+            // Eliminar el producto del carrito si la cantidad es 1
+            cart: state.cart.filter(item => (item.id !== payload.id) || (item.id === payload.id && item.quantity > 1)),
+          },
+        
     })
 
 
@@ -47,17 +63,25 @@ console.log("state",state)
     dispatch({ type: 'ADD_TO_CART', payload: item });
   };
   
-   const removeFromCart = (dispatch, item) => {
+ 
+// acciones relacionadas con aumentar y reducir la cantida de los productsCarts
+  const incrementQuantity = (dispatch, id) => {
+    dispatch({ type: 'INCREMENT_QUANTITY', payload: id });
+  };
+  
+  const decrementQuantity = (dispatch, item) => {
+    dispatch({ type: 'DECREMENT_QUANTITY', payload: item });
+  };
+  const removeFromCart = (dispatch, item) => {
     dispatch({ type: 'REMOVE_FROM_CART', payload: item });
   };
-
 
 
 return (
     <AppContext.Provider value={
         {
             state,dispatch,
-            addToCart,removeFromCart
+            removeFromCart
         }
     }>
 {children}

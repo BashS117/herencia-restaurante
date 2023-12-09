@@ -12,6 +12,7 @@ const AcordionPanel = ({ products,category ,rightPanel}) => {
         id: product.id,
         name: product.name,
         price: product.price,
+        quantity:1,
         //otras propiedades
       }
       //Despacho la accion  add_to_cart con el item como payload
@@ -19,6 +20,7 @@ const AcordionPanel = ({ products,category ,rightPanel}) => {
         type:'ADD_TO_CART', 
         payload: itemToAdd
       })
+      console.log('Nuevo estado:', state);
     }
 
     return (

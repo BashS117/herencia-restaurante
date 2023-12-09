@@ -1,27 +1,32 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Order from '../Order'
 import OrderCart from '../OrderCart'
+import { useContext } from "react";
+import { AppContext } from '../../Context/AppContext';
+
 
 const ShoppingCart = () => {
+
+  const {state}=useContext(AppContext)
+
   return (
     <div className='border border-orange rounded-lg'>
         <div className='flex justify-between items-center p-6'>
           <h2 className='font-medium text-xl'>Tu pedido</h2>    
         </div>
     <div className='px-6 overflow-y-scroll flex-1'>
-        <OrderCart/>
-    {/* {cartProducts.map(product=>(
-      <OrderCard 
-      key={product.id}
-      id={product.id}
-      title={product.title}
-      imageUrl={product.images}
-      price={product.price}
-      handleDelete={handleDelete}
+       
+        {state.cart.map((productCart,index)=>(
+      <OrderCart 
+      key={index}
+      id={productCart.id}
+      name={productCart.name}
+      // imageUrl={productCart.images}
+      price={productCart.price}
+      quantity={productCart.quantity}
       />
   ))}
-   */}
+  
     </div>
 
     <div className='px-6 mb-6'>
