@@ -33,7 +33,7 @@ export const AppProvider =({children})=>{
             ...state,
             // Decrementar la cantidad del producto específico en el carrito
             cart: state.cart.map(item =>
-              item.id === payload.id ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1 } : item
+              item.id === payload ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1 } : item
             ),
           },
           'REMOVE_FROM_CART': {

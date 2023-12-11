@@ -14,6 +14,14 @@ const OrderCart = ({id,name,imageUrl,price,quantity,category}) => {
       payload: id
     })
   }
+   //funcion para restar en uno un producto
+   const substractOne = (id)=>{
+  
+    dispatch({
+      type:'DECREMENT_QUANTITY', 
+      payload: id
+    })
+  }
 
 
   return (
@@ -25,7 +33,7 @@ const OrderCart = ({id,name,imageUrl,price,quantity,category}) => {
         <h3>{category}</h3>  
         <p className="text-sm font-light">{name}</p>
         <div className='text-[12px] flex gap-2'>      
-              <span>{price}</span>x <span>{quantity}</span>
+              <span>{price}mil</span>x <span>{quantity}</span>
         </div>
     </div>
     <div className='flex flex-col'>
@@ -33,14 +41,14 @@ const OrderCart = ({id,name,imageUrl,price,quantity,category}) => {
   <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-11 h-11">
+<svg onClick={()=>substractOne(id)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-11 h-11">
   <path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
 </svg>
 
 
     </div>
     <div className="flex items-center gap-2">
-          <p className="text-lg font-medium">$15000</p>
+          <p className="text-lg font-medium">${quantity*price}000</p>
           
       </div>
 
