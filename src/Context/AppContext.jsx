@@ -39,7 +39,7 @@ export const AppProvider =({children})=>{
           'REMOVE_FROM_CART': {
             ...state,
             // Eliminar el producto del carrito si la cantidad es 1
-            cart: state.cart.filter(item => (item.id !== payload.id) || (item.id === payload.id && item.quantity > 1)),
+            cart: state.cart.filter(item => (item.id !== payload) || (item.id === payload && item.quantity > 1)),
           },
         
     })

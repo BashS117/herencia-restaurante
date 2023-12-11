@@ -15,13 +15,21 @@ const OrderCart = ({id,name,imageUrl,price,quantity,category}) => {
     })
   }
    //funcion para restar en uno un producto
-   const substractOne = (id)=>{
-  
-    dispatch({
-      type:'DECREMENT_QUANTITY', 
-      payload: id
-    })
-  }
+   const substractOne = (id) => {
+    if (quantity === 1) {
+      // Si la cantidad es 1, eliminar el producto del carrito
+      dispatch({
+        type: 'REMOVE_FROM_CART',
+        payload: id ,
+      });
+    } else {
+      // Si la cantidad es mayor a 1, decrementar la cantidad
+      dispatch({
+        type: 'DECREMENT_QUANTITY',
+        payload: id,
+      });
+    }
+  };
 
 
   return (
