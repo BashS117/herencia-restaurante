@@ -20,8 +20,12 @@ export const AppProvider =({children})=>{
         },  
         'ADD_TO_CART': {
             ...state,
-            cart:[...state.cart,payload],//añadir el elemento al carrito
-        },
+            cart: state.cart.map(item =>
+              item.id === payload.id ? { ...item, quantity: item.quantity + 1 } : item
+            ).concat(
+              state.cart.find(item => item.id === payload.id) ? [] : payload
+            ),
+          },
         'INCREMENT_QUANTITY': {
             ...state,
             // Incrementar la cantidad del producto específico en el carrito

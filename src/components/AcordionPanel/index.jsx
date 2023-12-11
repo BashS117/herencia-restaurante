@@ -16,7 +16,7 @@ const AcordionPanel = ({ products,category ,rightPanel}) => {
         category: category
         //otras propiedades
       }
-      //Despacho la accion  add_to_cart con el item como payload
+      //Despacho la accion  add_to_ cart con el item como payload
       dispatch({
         type:'ADD_TO_CART', 
         payload: itemToAdd
