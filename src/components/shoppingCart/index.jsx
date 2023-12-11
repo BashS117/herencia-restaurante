@@ -24,6 +24,7 @@ const ShoppingCart = () => {
       // imageUrl={productCart.images}
       price={productCart.price}
       quantity={productCart.quantity}
+      category={productCart.category}
       />
   ))}
   

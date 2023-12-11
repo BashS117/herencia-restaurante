@@ -2,7 +2,7 @@ import React from 'react'
 import { AppContext } from '../../Context/AppContext';
 import { useContext } from 'react';
 
-const OrderCart = ({id,name,imageUrl,price,quantity}) => {
+const OrderCart = ({id,name,imageUrl,price,quantity,category}) => {
 
   const { state,dispatch, incrementQuantity, decrementQuantity, removeFromCart } = useContext(AppContext);
 
@@ -21,7 +21,8 @@ const OrderCart = ({id,name,imageUrl,price,quantity}) => {
       <figure className="w-20 h-20">
             <img className="w-full h-full rounded-lg object-cover" src='https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3ee19c185580241.65675bb1bb62f.jpg' alt='' />
       </figure>
-    <div className="flex flex-col items-center gap-2">   
+    <div className="flex flex-col items-center gap-2"> 
+        <h3>{category}</h3>  
         <p className="text-sm font-light">{name}</p>
         <div className='text-[12px] flex gap-2'>      
               <span>{price}</span>x <span>{quantity}</span>
