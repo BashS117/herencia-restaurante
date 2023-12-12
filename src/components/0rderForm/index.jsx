@@ -105,6 +105,7 @@ const OrderForm = () => {
  :
  <form
  onSubmit={handleSubmit(onSubmit)}
+ className='border border-orange rounded-lg  p-[10px]' 
  >
    <div className=' flex flex-col  gap-1 mb-[10px]'>
      <label htmlFor="">Nombre</label>
