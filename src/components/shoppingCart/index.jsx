@@ -19,7 +19,10 @@ const ShoppingCart = () => {
 
     const whatsappUrl = `https://api.whatsapp.com/send?phone=573022968978&text=*¡Nuevo Pedido!*🛵%0A*Productos*: %0A ${productsText}*Valor total:* $${sum}000`;
 
-    
+   const onClick=() => {
+      handleCheckout(); // Puedes realizar acciones locales adicionales aquí si es necesario
+      window.location.href = whatsappUrl; // Redirigir a WhatsApp
+    }
 
 
   return (
@@ -53,8 +56,8 @@ const ShoppingCart = () => {
       <button className='w-full bg-[#25d366] py-3 text-white rounded-lg' 
       // onClick={() => handleCheckout()}
       >
-        <Link to={whatsappUrl}>
-          Enviar a WhatsApp
+        <Link  to={whatsappUrl}>
+          <input type="submit" value='Enviar a WhatsApp' />
         </Link>
       </button>
     
