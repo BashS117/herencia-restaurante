@@ -1,13 +1,29 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,useContext } from 'react'
+import { AppContext } from '../../Context/AppContext'
 import { useForm } from 'react-hook-form'
 import ShoppingCart from '../shoppingCart'
 
 const OrderForm = () => {
   const {register,formState:{errors}, handleSubmit}=useForm();
 
+  const {state}=useContext(AppContext)
+
+  let sum= 0;
+  state.cart.forEach(element => sum += element.price*element.quantity);
+  
+  const productNameandPrice = state.cart
+  .map((product) => `${product.category}-${product.name} (V/U:  $${product.price}m) x ${product.quantity}= $${product.price*product.quantity}000,%0A`);
+  const productsText = productNameandPrice.join(' ');
+
+
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=573022968978&text=*¡Nuevo Pedido!*🛵%0A*Productos*: %0A ${productsText}*Valor total:* $${sum}000`;
+
+//ENVIAR EL PEDIDO
   const onSubmit =(data)=>{
     console.log('orderFormDATA:',data)
+    window.location.href = whatsappUrl; // Redirigir a WhatsApp
+
   }
 
   const [selectedOption, setSelectedOption] = useState('domi');
@@ -100,7 +116,7 @@ const OrderForm = () => {
      {...register('notas')}
      type="text" />
    </div>
-   <ShoppingCart/>
+   <ShoppingCart sum={sum}/>
  </form>
  :
  <form

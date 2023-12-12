@@ -5,19 +5,9 @@ import { useContext } from "react";
 import { AppContext } from '../../Context/AppContext';
 
 
-const ShoppingCart = () => {
+const ShoppingCart = ({sum}) => {
 
   const {state}=useContext(AppContext)
-
-    let sum= 0;
-    state.cart.forEach(element => sum += element.price*element.quantity);
-    
-    const productNameandPrice = state.cart
-    .map((product) => `${product.category}-${product.name} (V/U:  $${product.price}m) x ${product.quantity}= $${product.price*product.quantity}000,%0A`);
-    const productsText = productNameandPrice.join(' ');
-  
-
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=573022968978&text=*¡Nuevo Pedido!*🛵%0A*Productos*: %0A ${productsText}*Valor total:* $${sum}000`;
 
    const onClick=() => {
       handleCheckout(); // Puedes realizar acciones locales adicionales aquí si es necesario
@@ -56,9 +46,7 @@ const ShoppingCart = () => {
       <button className='w-full bg-[#25d366] py-3 text-white rounded-lg' 
       // onClick={() => handleCheckout()}
       >
-        <Link  to={whatsappUrl}>
           <input type="submit" value='Enviar a WhatsApp' />
-        </Link>
       </button>
     
     </div>
