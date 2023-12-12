@@ -4,9 +4,9 @@ import ShoppingCart from '../shoppingCart'
 
 const Order = () => {
   return (
-    <div>
+    <div className='relative'>
         <OrderForm/>
-        <ShoppingCart/>
+        {/* <ShoppingCart/> */}
     </div>
   )
 }

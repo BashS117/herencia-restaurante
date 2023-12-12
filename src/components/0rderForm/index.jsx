@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import ShoppingCart from '../shoppingCart'
 
 const OrderForm = () => {
   const {register, handleSubmit}=useForm
@@ -41,10 +42,11 @@ const OrderForm = () => {
           <label htmlFor="">Barrio, Casa o punto de referencia?</label>
           <input className='w-full' type="text"  name=''/>
         </div>
-        <div className='flex flex-col '  >
+        <div className='flex flex-col mb-2 '  >
           <label htmlFor="">Agrega notas a tu pedido y da click en "Enviar a WhatsApp"</label>
           <input className='w-full' type="text"  name=''/>
         </div>
+        <ShoppingCart/>
       </form>
     </div>
   )

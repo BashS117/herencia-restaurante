@@ -23,11 +23,11 @@ const ShoppingCart = () => {
 
 
   return (
-    <div className='border border-orange rounded-lg'>
+    <div className='border border-orange rounded-lg '>
         <div className='flex justify-between items-center p-6'>
           <h2 className='font-medium text-xl'>Tu pedido</h2>    
         </div>
-    <div className='px-6 overflow-y-scroll flex-1'>
+    <div className='px-2 overflow-y-scroll flex-1'>
        
         {state.cart.map((productCart,index)=>(
       <OrderCart 
