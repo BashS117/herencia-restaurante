@@ -13,20 +13,24 @@ const OrderForm = () => {
   state.cart.forEach(element => sum += element.price*element.quantity);
   
   const productNameandPrice = state.cart
-  .map((product) => `${product.category}-${product.name} (V/U:  $${product.price}m) x ${product.quantity}= $${product.price*product.quantity}000,%0A`);
+  .map((product) => `${product.category}-${product.name} %0A (V/U:  $${product.price}m) x *${product.quantity}*= $${product.price*product.quantity}000,%0A`);
   const productsText = productNameandPrice.join(' ');
 
 
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=573022968978&text=*¡Nuevo Pedido!*🛵%0A*Productos*: %0A ${productsText}*Valor total:* $${sum}000`;
 
 //ENVIAR EL PEDIDO
   const onSubmit =(data)=>{
     console.log('orderFormDATA:',data)
+const googleMapsUrl = `https://www.google.com/maps/place/${data.direccionprincipal}%2B${data.direccionuno}%2B%2523%2B${data.direcciondos}%2B-%2B${data.direcciontres},%2BCorinto%2BCauca`
+    const customerNameandAdress =`________________ %0A*Entregar a*:${data.nombre},%0A*Tipo de Pedido:* ${selectedOption},%0A*Dirección:* ${data.direccionprincipal} ${data.direccionuno} %23${data.direcciondos}-${data.direcciontres}, ${data.barrio}`;
+
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=573022968978&text=*Google Map:*${googleMapsUrl} %0A*¡Nuevo Pedido!*🛵%0A Restaurante Corralazo %0A*Productos*: %0A ${productsText} %0A*Valor total:* $${sum}000 %0A ${customerNameandAdress} `;
+
     window.location.href = whatsappUrl; // Redirigir a WhatsApp
 
   }
 
-  const [selectedOption, setSelectedOption] = useState('domi');
+  const [selectedOption, setSelectedOption] = useState('Domicilio');
 
   const handleSelectChange = (event) => {
     const value = event.target.value;
@@ -37,14 +41,14 @@ const OrderForm = () => {
     <div className=' w-[full] text-left mb-3'>
       <div className='flex flex-col  gap-1 mb-[10px]'>
           <label htmlFor="">Tipo de Pedido</label>
-         <select onChange={handleSelectChange} value={selectedOption} name="" id=""
+         <select onChange={handleSelectChange} value={selectedOption} id=""
              >
-          <option value="domi">Domicilio</option>
-          <option value="colo">Consumo Local</option>
+          <option value="Domicilio">Domicilio</option>
+          <option value="Consumo Local">Consumo Local</option>
          </select>
       </div>
 
-{selectedOption === "domi"?
+{selectedOption === "Domicilio"?
  <form 
  onSubmit={handleSubmit(onSubmit)}
  className='border border-orange rounded-lg  p-[10px]' action="">
@@ -67,9 +71,9 @@ const OrderForm = () => {
        <select className='w-14'  
        {...register('direccionprincipal', {
          required:true
-        })} name="" id="">
-         <option value="carrera">carrera</option>
-         <option value="calle">calle</option>
+        })} id="">
+         <option value="Cra.">carrera</option>
+         <option value="Cl.">calle</option>
          <option value="diagonal">diagonal</option>
        </select>
        <input 
