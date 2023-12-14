@@ -22,7 +22,7 @@ const OrderForm = () => {
   const onSubmit =(data)=>{
     console.log('orderFormDATA:',data)
 const googleMapsUrl = `https://www.google.com/maps/place/${data.direccionprincipal}%2B${data.direccionuno}%2B%2523%2B${data.direcciondos}%2B-%2B${data.direcciontres},%2BCorinto%2BCauca`
-    const customerNameandAdress =`________________ %0A*Entregar a*: ${data.nombre},%0A*Tipo de Pedido:* ${selectedOption},%0A*Dirección:* ${data.direccionprincipal} ${data.direccionuno} %23${data.direcciondos}-${data.direcciontres}, ${data.barrio}`;
+    const customerNameandAdress =`________________ %0A*Entregar a*: ${data.nombre},%0A*Tipo de Pedido:* ${selectedOption},%0A*Dirección:* ${data.direccionprincipal} ${data.direccionuno} %23${data.direcciondos}-${data.direcciontres}, ${data.barrio} %0A${data.notas?`*Notas:* ${data.notas}`:''}`;
 
     const whatsappUrl = `https://api.whatsapp.com/send?phone=573022968978&text=*Google Map:*${googleMapsUrl} %0A*¡Nuevo Pedido!*🛵%0A Restaurante Corralazo %0A*Productos*: %0A ${productsText} %0A*Valor total:* $${sum}000 %0A ${customerNameandAdress} `;
 
@@ -152,7 +152,7 @@ const googleMapsUrl = `https://www.google.com/maps/place/${data.direccionprincip
        {errors.mesa?.type==='required' && <p>El numero de mesa es requerido</p>}
        {errors.mesa?.type==='maxLength' && <p>El numero es incorrecto</p>}
    </div>
-   <ShoppingCart/>
+   <ShoppingCart sum={sum}/>
 
   </form>}
      
