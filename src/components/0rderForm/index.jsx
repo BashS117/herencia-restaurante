@@ -21,10 +21,25 @@ const OrderForm = () => {
 //ENVIAR EL PEDIDO
   const onSubmit =(data)=>{
     console.log('orderFormDATA:',data)
-const googleMapsUrl = `https://www.google.com/maps/place/${data.direccionprincipal}%2B${data.direccionuno}%2B%2523%2B${data.direcciondos}%2B-%2B${data.direcciontres},%2BCorinto%2BCauca`
-    const customerNameandAdress =`________________ %0A*Entregar a*: ${data.nombre},%0A*Tipo de Pedido:* ${selectedOption},%0A*Dirección:* ${data.direccionprincipal} ${data.direccionuno} %23${data.direcciondos}-${data.direcciontres}, ${data.barrio} %0A${data.notas?`*Notas:* ${data.notas}`:''}`;
+    //texto del link para google Maps
+let googleMapsUrl = `*Google Map:* https://www.google.com/maps/place/${data.direccionprincipal}%2B${data.direccionuno}%2B%2523%2B${data.direcciondos}%2B-%2B${data.direcciontres},%2BCorinto%2BCauca`
+if(selectedOption==='Consumo Local'){
+googleMapsUrl='';
+}
+    //texto con el nombre y direccion y nota
+    // const customerNameandAdress =`________________ %0A*Entregar a*: ${data.nombre},%0A*Tipo de Pedido:* ${selectedOption},%0A*Dirección:* ${data.direccionprincipal} ${data.direccionuno} %23${data.direcciondos}-${data.direcciontres}, ${data.barrio} %0A${data.notas?`*Notas:* ${data.notas}`:''}`;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=573022968978&text=*Google Map:*${googleMapsUrl} %0A*¡Nuevo Pedido!*🛵%0A Restaurante Corralazo %0A*Productos*: %0A ${productsText} %0A*Valor total:* $${sum}000 %0A ${customerNameandAdress} `;
+    let customerNameandAdress = ``;
+
+    if (selectedOption === 'Domicilio') {
+      customerNameandAdress = `________________ %0A*Entregar a*: ${data.nombre},%0A*Tipo de Pedido:* ${selectedOption},%0A*Dirección:* ${data.direccionprincipal} ${data.direccionuno} %23${data.direcciondos}-${data.direcciontres}, ${data.barrio} %0A${data.notas?`*Notas:* ${data.notas}`:''}`;
+    } else {
+      customerNameandAdress = `________________ %0A*Entregar a*: ${data.nombre},%0A*Tipo de Pedido:* ${selectedOption},%0A ${data.notas?`*Notas:* ${data.notas}`:''}`;
+    }
+    
+
+    //texto link a whatsapp
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=573022968978&text=${googleMapsUrl} %0A*¡Nuevo Pedido!*🛵%0A Restaurante Corralazo %0A*Productos*: %0A ${productsText} %0A*Valor total:* $${sum}000 %0A ${customerNameandAdress} `;
 
     window.location.href = whatsappUrl; // Redirigir a WhatsApp
 
@@ -151,6 +166,13 @@ const googleMapsUrl = `https://www.google.com/maps/place/${data.direccionprincip
        />
        {errors.mesa?.type==='required' && <p>El numero de mesa es requerido</p>}
        {errors.mesa?.type==='maxLength' && <p>El numero es incorrecto</p>}
+   </div>
+   <div className='flex flex-col mb-2 '  >
+     <label htmlFor="">Agrega notas a tu pedido y da click en "Enviar a WhatsApp"</label>
+     <input 
+     className='w-full' 
+     {...register('notas')}
+     type="text" />
    </div>
    <ShoppingCart sum={sum}/>
 
