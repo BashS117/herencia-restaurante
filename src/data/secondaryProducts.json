@@ -2,46 +2,46 @@
     {
       "category": "Bebidas",
       "products": [
-        { "id":1,"name": "Sodas italiana", "price":6, "image": "burger1.jpg" },
-        { "id":2,"name": "Limonada cereza", "price":6, "image": "burger2.jpg" },
-        { "id":3,"name": "Limonada de Coco", "price":15, "image": "burger3.jpg" },
-        { "id":4,"name": "Cocacola Lata", "price":3, "image": "burger3.jpg" },
-        { "id":5,"name": "Cocacola Personal", "price":4, "image": "burger3.jpg" },
-        { "id":6,"name": "Cocacola Litro", "price":7, "image": "burger3.jpg" },
-        { "id":7,"name": "Cocacola 3LitroS", "price":10, "image": "burger3.jpg" },
-        { "id":8,"name": "Hit Personal", "price":4, "image": "burger3.jpg" },
-        { "id":9,"name": "Hit Caja", "price":6, "image": "burger3.jpg" },
-        { "id":10,"name": "Cerveza Lata", "price":3, "image": "burger3.jpg" },
-        { "id":11,"name": "Agua Botella", "price":2, "image": "burger3.jpg" }
+        { "id":33,"name": "Sodas italiana", "price":6, "image": "burger1.jpg" },
+        { "id":34,"name": "Limonada cereza", "price":6, "image": "burger2.jpg" },
+        { "id":35,"name": "Limonada de Coco", "price":15, "image": "burger3.jpg" },
+        { "id":35,"name": "Cocacola Lata", "price":3, "image": "burger3.jpg" },
+        { "id":37,"name": "Cocacola Personal", "price":4, "image": "burger3.jpg" },
+        { "id":38,"name": "Cocacola Litro", "price":7, "image": "burger3.jpg" },
+        { "id":39,"name": "Cocacola 3LitroS", "price":10, "image": "burger3.jpg" },
+        { "id":40,"name": "Hit Personal", "price":4, "image": "burger3.jpg" },
+        { "id":41,"name": "Hit Caja", "price":6, "image": "burger3.jpg" },
+        { "id":42,"name": "Cerveza Lata", "price":3, "image": "burger3.jpg" },
+        { "id":43,"name": "Agua Botella", "price":2, "image": "burger3.jpg" }
       ]
     },
     {
       "category": "Granizados",
       "products": [
-        { "id":12,"name": "Sin Licor", "price":5, "image": "fries1.jpg" },
-        { "id":13,"name": "Con Licor", "price":6, "image": "fries2.jpg" },
-        { "id":14,"name": "Adi jeringa", "price":2, "image": "fries3.jpg" }
+        { "id":44,"name": "Sin Licor", "price":5, "image": "fries1.jpg" },
+        { "id":45,"name": "Con Licor", "price":6, "image": "fries2.jpg" },
+        { "id":46,"name": "Adi jeringa", "price":2, "image": "fries3.jpg" }
       ]
     },
     {
       "category": "Diferente",
       "products": [
-        { "id":15,"name": "Choripan", "price":7, "image": "fries1.jpg" },
-        { "id":16,"name": "Picada mixta", "price":22,  "image": "fries2.jpg" },
-        { "id":17,"name": "Papas y carne", "price":9, "image": "fries3.jpg" },
-        { "id":18,"name": "Choripapa", "price":9, "image": "fries3.jpg" }
+        { "id":47,"name": "Choripan", "price":7, "image": "fries1.jpg" },
+        { "id":48,"name": "Picada mixta", "price":22,  "image": "fries2.jpg" },
+        { "id":49,"name": "Papas y carne", "price":9, "image": "fries3.jpg" },
+        { "id":50,"name": "Choripapa", "price":9, "image": "fries3.jpg" }
       ]
     },
     {
       "category": "Adiciones",
       "products": [
-        { "id":19,"name": "Queso", "price":1, "image": "fries1.jpg" },
-        { "id":20,"name": "Maiz",  "price":1, "image": "fries2.jpg" },
-        { "id":21,"name": "Tocineta", "price":2, "image": "fries3.jpg" },
-        { "id":22,"name": "Guacamole", "price":2, "image": "fries3.jpg" },
-        { "id":23,"name": "Chicharrón", "price":2, "image": "fries3.jpg" },
-        { "id":24,"name": "Cebolla Dulce", "price":2, "image": "fries3.jpg" },
-        { "id":25,"name": "Pico de Gallo", "price":2, "image": "fries3.jpg" }
+        { "id":52,"name": "Queso", "price":1, "image": "fries1.jpg" },
+        { "id":52,"name": "Maiz",  "price":1, "image": "fries2.jpg" },
+        { "id":53,"name": "Tocineta", "price":2, "image": "fries3.jpg" },
+        { "id":54,"name": "Guacamole", "price":2, "image": "fries3.jpg" },
+        { "id":55,"name": "Chicharrón", "price":2, "image": "fries3.jpg" },
+        { "id":56,"name": "Cebolla Dulce", "price":2, "image": "fries3.jpg" },
+        { "id":57,"name": "Pico de Gallo", "price":2, "image": "fries3.jpg" }
       ]
     }
   ]
