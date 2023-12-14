@@ -18,8 +18,8 @@
     {
       "category": "Granizados",
       "products": [
-        { "id":44,"name": "Sin Licor", "price":5, "image": "fries1.jpg" },
-        { "id":45,"name": "Con Licor", "price":6, "image": "fries2.jpg" },
+        { "id":44,"name": "Granizado Sin Licor", "price":5, "image": "fries1.jpg" },
+        { "id":45,"name": "Granizado Con Licor", "price":6, "image": "fries2.jpg" },
         { "id":46,"name": "Adi jeringa", "price":2, "image": "fries3.jpg" }
       ]
     },
@@ -41,13 +41,13 @@
     {
       "category": "Adiciones",
       "products": [
-        { "id":52,"name": "Queso", "price":1, "image": "fries1.jpg" },
-        { "id":53,"name": "Maiz",  "price":1, "image": "fries2.jpg" },
-        { "id":54,"name": "Tocineta", "price":2, "image": "fries3.jpg" },
-        { "id":55,"name": "Guacamole", "price":2, "image": "fries3.jpg" },
-        { "id":56,"name": "Chicharrón", "price":2, "image": "fries3.jpg" },
-        { "id":57,"name": "Cebolla Dulce", "price":2, "image": "fries3.jpg" },
-        { "id":58,"name": "Pico de Gallo", "price":2, "image": "fries3.jpg" }
+        { "id":52,"name": "Adición de Queso", "price":1, "image": "fries1.jpg" },
+        { "id":53,"name": "Adición de Maiz",  "price":1, "image": "fries2.jpg" },
+        { "id":54,"name": "Adición de Tocineta", "price":2, "image": "fries3.jpg" },
+        { "id":55,"name": "Adición de Guacamole", "price":2, "image": "fries3.jpg" },
+        { "id":56,"name": "Adición de Chicharrón", "price":2, "image": "fries3.jpg" },
+        { "id":57,"name": "Adición de Cebolla Dulce", "price":2, "image": "fries3.jpg" },
+        { "id":58,"name": "Adición de Pico de Gallo", "price":2, "image": "fries3.jpg" }
       ]
     }
   ]
