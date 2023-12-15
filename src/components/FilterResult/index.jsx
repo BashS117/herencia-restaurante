@@ -39,7 +39,11 @@ const FilterResult = ({products}) => {
                   <p className="text-dark-gray text-sm">ver mas...</p>
                </button>
               </div>
-              <button  onClick={() => addToCart(product)}>
+              <button  onClick={() => addToCart(product)}
+                className="bg-green-500  px-2 py-2 shadow-md rounded-md hover:-translate-y-1.5 transition-all duration-300"
+                style={{ boxShadow: '0 0 6px rgba(0, 0, 0, 0.5)' }}
+               
+              >
               <svg
       fill="currentColor"
       viewBox="0 0 16 16"
