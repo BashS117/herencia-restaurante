@@ -1,6 +1,9 @@
 import React from 'react'
+import { AppContext } from '../../Context/AppContext'
+import { useContext } from 'react'
 
 const Header = () => {
+    const {setFilter}=useContext(AppContext)
   return (
     <header className='w-full'>
         <div className='flex justify-between '>
@@ -18,7 +21,9 @@ const Header = () => {
                 </ol>
             </div>
         </div>
-        <input className='w-[80%]' type="text" />
+        <input className='w-[80%]' 
+        onChange={(event)=>setFilter(event.target.value)}
+        type="text" />
     </header>
   )
 }

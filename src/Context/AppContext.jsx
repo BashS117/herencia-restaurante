@@ -1,4 +1,6 @@
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useReducer,useState,useEffect } from "react";
+import secondaryProducts from '../data/secondaryProducts.json'
+import  products from '../data/products.json'
 
 export const AppContext = createContext();
 
@@ -11,6 +13,39 @@ export const AppProvider =({children})=>{
 
     }  
     console.log('cart:',initialState.cart)
+
+    // Unir los dos arrays
+  const allProducts = products.concat(secondaryProducts);
+  console.log("TODOS LOS PRODUCTOS: ",allProducts)
+
+  // Estado para el valor del input de filtrado
+  const [filter, setFilter] = useState(null);
+     //productos filtrados
+     const [filteredProducts,setFilteredProducts]=useState(null);
+
+
+
+     const filteredProductsByTitle = (allProducts, filter) => {
+      return allProducts.flatMap(category => category.products.filter(item => item.name.toLowerCase().includes(filter.toLowerCase())));
+    };
+
+  const filterBy = (searchType,allProducts,filter)=>{
+    if(searchType==='BY_TITLE'){
+     return   filteredProductsByTitle(allProducts,filter)
+    }
+
+    // if(!searchType){
+    //     return perfumes
+    //    }
+
+}
+
+  useEffect(() => {
+    if (filter) setFilteredProducts(filterBy('BY_TITLE', allProducts, filter, ))
+  
+}, [ filter])
+
+
 
     const reducerObject=(state,payload)=>({
         'PANELOPEN':{
@@ -85,7 +120,9 @@ return (
     <AppContext.Provider value={
         {
             state,dispatch,
-            removeFromCart
+            removeFromCart,
+            setFilter,
+            filteredProducts
         }
     }>
 {children}
