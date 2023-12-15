@@ -23,6 +23,7 @@ const Header = () => {
         </div>
         <input className='w-[80%]' 
         onChange={(event) => setFilter(event.target.value.trim() || null)}
+        placeholder='Busca tu comida'
         type="search" />
     </header>
   )
