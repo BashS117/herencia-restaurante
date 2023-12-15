@@ -1,7 +1,8 @@
 import { createContext, useContext, useReducer,useState,useEffect } from "react";
 import secondaryProducts from '../data/secondaryProducts.json'
 import  products from '../data/products.json'
-
+import swal from 'sweetalert2'
+ 
 export const AppContext = createContext();
 
 export const AppProvider =({children})=>{
@@ -113,15 +114,28 @@ console.log("state",state)
   const removeFromCart = (dispatch, item) => {
     dispatch({ type: 'REMOVE_FROM_CART', payload: item });
   };
-
-
+//funcion para mostrar alerta al agregar producto al carrito
+  const mostrarAlert=()=>{
+    swal.fire({
+      text: "Se ha añadidó al carrito",
+      icon: "success",
+      toast: true,
+      position: 'top',
+      timer: '3000',
+      showConfirmButton: false,
+      color: '#FF570C'
+      
+    
+    })
+  }
 return (
     <AppContext.Provider value={
         {
             state,dispatch,
             removeFromCart,
             setFilter,
-            filteredProducts
+            filteredProducts,
+            mostrarAlert
         }
     }>
 {children}

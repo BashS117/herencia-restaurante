@@ -4,7 +4,7 @@ import { AppContext } from '../../Context/AppContext';
 
 const FilterResult = ({products}) => {
 
-    const {dispatch}=useContext(AppContext)
+    const {dispatch,mostrarAlert}=useContext(AppContext)
 
     //funcion para agregar  un producto al carrito 
     const addToCart = (product)=>{
@@ -20,6 +20,8 @@ const FilterResult = ({products}) => {
         type:'ADD_TO_CART', 
         payload: itemToAdd
       })
+      mostrarAlert();
+
     }
 
     

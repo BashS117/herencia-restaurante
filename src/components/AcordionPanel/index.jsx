@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import { AppContext } from '../../Context/AppContext';
-
+import swal from 'sweetalert2'
 
 const AcordionPanel = ({ products,category ,rightPanel}) => {
 
-    const {state,dispatch}=useContext(AppContext)
+    const {state,dispatch,mostrarAlert}=useContext(AppContext)
+
+   
 
     //funcion para agregar  un producto al carrito 
     const addToCart = (product)=>{
@@ -13,7 +15,6 @@ const AcordionPanel = ({ products,category ,rightPanel}) => {
         name: product.name,
         price: product.price,
         quantity:1,
-        category: category
         //otras propiedades
       }
       //Despacho la accion  add_to_ cart con el item como payload
@@ -21,7 +22,9 @@ const AcordionPanel = ({ products,category ,rightPanel}) => {
         type:'ADD_TO_CART', 
         payload: itemToAdd
       })
-    }
+  // Muestro una alerta al usuario
+  mostrarAlert()   
+ }
 
     return (
       <div className={`${rightPanel?'relative left-[-175px] w-[300px]':''} w-[160%] relative ${state.panelOpen && state.selectedCategory === category ? 'flex' : 'hidden'}`}>

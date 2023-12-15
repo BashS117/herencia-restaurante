@@ -13,7 +13,7 @@ const OrderForm = () => {
   state.cart.forEach(element => sum += element.price*element.quantity);
   
   const productNameandPrice = state.cart
-  .map((product) => `${product.category}-${product.name} %0A (V/U:  $${product.price}m) x *${product.quantity}*= $${product.price*product.quantity}000,%0A`);
+  .map((product) => `${product.name} %0A (V/U:  $${product.price}m) x *${product.quantity}*= $${product.price*product.quantity}000,%0A`);
   const productsText = productNameandPrice.join(' ');
 
 
