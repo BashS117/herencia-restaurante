@@ -22,8 +22,8 @@ const Header = () => {
             </div>
         </div>
         <input className='w-[80%]' 
-        onChange={(event)=>setFilter(event.target.value)}
-        type="text" />
+        onChange={(event) => setFilter(event.target.value.trim() || null)}
+        type="search" />
     </header>
   )
 }

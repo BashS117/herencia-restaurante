@@ -12,11 +12,9 @@ export const AppProvider =({children})=>{
         cart: [], //elementos del carrito
 
     }  
-    console.log('cart:',initialState.cart)
 
     // Unir los dos arrays
   const allProducts = products.concat(secondaryProducts);
-  console.log("TODOS LOS PRODUCTOS: ",allProducts)
 
   // Estado para el valor del input de filtrado
   const [filter, setFilter] = useState(null);
@@ -41,6 +39,7 @@ export const AppProvider =({children})=>{
 }
 
   useEffect(() => {
+    if(!filter)setFilteredProducts(null)
     if (filter) setFilteredProducts(filterBy('BY_TITLE', allProducts, filter, ))
   
 }, [ filter])
