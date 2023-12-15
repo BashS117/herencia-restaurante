@@ -15,6 +15,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.titlePage{
+  font-family: Rubik Doodle Shadow;
+}
 
 a {
   font-weight: 500;
