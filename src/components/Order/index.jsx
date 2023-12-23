@@ -6,7 +6,6 @@ const Order = () => {
   return (
     <div className='relative'>
         <OrderForm/>
-        {/* <ShoppingCart/> */}
     </div>
   )
 }

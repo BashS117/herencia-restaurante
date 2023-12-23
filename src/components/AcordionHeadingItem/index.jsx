@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AcordionHeadingItem = ({category,index,handlePanelOpen,rightPanel,isPanelOpen}) => {
+const AcordionHeadingItem = ({category,categoryImg,index,handlePanelOpen,rightPanel,isPanelOpen}) => {
   console.log(isPanelOpen)
     const handleClick = ()=>{
         handlePanelOpen(category)
@@ -9,7 +9,7 @@ const AcordionHeadingItem = ({category,index,handlePanelOpen,rightPanel,isPanelO
     <div className={`${rightPanel? 'h-[110px]':'h-[90px]'} items-center p-[5px] flex justify-between mb-[10px]  border-[1px] border-orange rounded-lg shadow-lg`} onClick={handleClick} >
         <div className={`${rightPanel? 'flex flex-col':'flex  items-center '} gap-[5px] w-full font-bold `}>
         <figure>
-              <img className=' w-[100%] h-[68px] rounded-md object-cover' src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3ee19c185580241.65675bb1bb62f.jpg" alt="" />
+              <img className=' w-[100%] h-[68px] rounded-md object-cover' src={categoryImg} alt="" />
           </figure>
           <p className={index === 0  ? 'whitespace-normal break-words w-[65px]' : ''}>   {category}</p>
         </div>
