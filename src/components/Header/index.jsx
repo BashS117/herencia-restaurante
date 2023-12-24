@@ -8,7 +8,7 @@ const Header = () => {
     <header className='w-full'>
         <div className='flex justify-between '>
             <figure>
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/3d0cfc185580241.656649b978204.png" alt="" />
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/39ff23185580241.65887d5f1f855.png" alt="logo" />
             </figure>
             <div className='w-[65%] mt-[10px] pl-[5px]'>
                 <h1 className='titlePage text-[2.8rem] text-orange'>Corralazo</h1>

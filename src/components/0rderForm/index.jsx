@@ -39,7 +39,7 @@ googleMapsUrl='';
     
 
     //texto link a whatsapp
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=573022968978&text=${googleMapsUrl} %0A*¡Nuevo Pedido!*🛵%0A Restaurante Corralazo %0A*Productos*: %0A ${productsText} %0A*Valor total:* $${sum}000 %0A ${customerNameandAdress} `;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=573234754284&text=${googleMapsUrl} %0A*¡Nuevo Pedido!*🛵%0A Restaurante Corralazo %0A*Productos*: %0A ${productsText} %0A*Valor total:* $${sum}000 %0A ${customerNameandAdress} `;
 
     window.location.href = whatsappUrl; // Redirigir a WhatsApp
 
