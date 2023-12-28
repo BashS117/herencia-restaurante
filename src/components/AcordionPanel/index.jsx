@@ -12,6 +12,7 @@ const AcordionPanel = ({ products,category ,rightPanel}) => {
       const itemToAdd = {
         id: product.id,
         name: product.name,
+        image:product.image,
         price: product.price,
         quantity:1,
         //otras propiedades

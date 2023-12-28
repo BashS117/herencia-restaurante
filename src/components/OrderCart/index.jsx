@@ -2,7 +2,7 @@ import React from 'react'
 import { AppContext } from '../../Context/AppContext';
 import { useContext } from 'react';
 
-const OrderCart = ({id,name,imageUrl,price,quantity,category}) => {
+const OrderCart = ({id,name,image,price,quantity,category}) => {
 
   const { state,dispatch, incrementQuantity, decrementQuantity, removeFromCart } = useContext(AppContext);
 
@@ -35,7 +35,7 @@ const OrderCart = ({id,name,imageUrl,price,quantity,category}) => {
   return (
   <div className="flex justify-between items-center py-2 border-b-[1px] border-orange ">
       <figure className="w-20 h-20">
-            <img className="w-full h-full rounded-lg object-cover" src='https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3ee19c185580241.65675bb1bb62f.jpg' alt='' />
+            <img className="w-full h-full rounded-lg object-cover" src={image} alt='' />
       </figure>
     <div className="flex flex-col items-center gap-2"> 
         <h3>{category}</h3>  

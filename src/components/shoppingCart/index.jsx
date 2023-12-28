@@ -31,6 +31,7 @@ const ShoppingCart = ({sum}) => {
       price={productCart.price}
       quantity={productCart.quantity}
       category={productCart.category}
+      image={productCart.image}
       />
   ))}
   
