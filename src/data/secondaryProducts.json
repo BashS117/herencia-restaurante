@@ -5,7 +5,7 @@
       "products": [
         { "id":33,"name": "Sodas italiana", "price":6, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/56b359185580241.65885d27d72b0.png" },
         { "id":34,"name": "Limonada cereza", "price":6, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/98e647185580241.6586fcf1697c4.png" },
-        { "id":35,"name": "Limonada de Coco", "price":15, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cabc33185580241.6586fcf1680ec.png" },
+        { "id":35,"name": "Limonada de Coco", "price":7, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cabc33185580241.6586fcf1680ec.png" },
         { "id":36,"name": "Cocacola Lata", "price":3, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fd569d185580241.6586fcf16add2.png" },
         { "id":37,"name": "Cocacola Personal", "price":4, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/dd7e70185580241.6586fcf168c00.png" },
         { "id":38,"name": "Cocacola Litro", "price":7, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/328d30185580241.6586fcf1672b2.png" },
