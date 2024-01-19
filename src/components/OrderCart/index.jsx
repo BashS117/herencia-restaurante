@@ -38,10 +38,10 @@ const OrderCart = ({id,name,image,price,quantity,category}) => {
             <img className="w-full h-full rounded-lg object-cover" src={image} alt='' />
       </figure>
     <div className="flex flex-col items-center gap-2"> 
-        <h3>{category}</h3>  
-        <p className="text-sm font-light">{name}</p>
-        <div className='text-[12px] flex gap-2'>      
-              <span>{price}mil</span>x <span>{quantity}</span>
+       
+        <p className="text-sm font-bold pl-2">{name}</p>
+        <div className='text-[13px] flex gap-2 items-center'>      
+              <span>{price}mil</span>x <span className='font-bold text-[16px]'>{quantity}</span>
         </div>
     </div>
     <div className='flex flex-col'>
