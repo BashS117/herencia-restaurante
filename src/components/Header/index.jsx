@@ -23,9 +23,9 @@ const Header = () => {
                 </lo>
             </div>
         </div>
-        <input className='w-[80%] mt-2' 
+        <input className='w-[80%] h-[30px] mt-2 py-1 pr-1 text-[1.4rem]' 
         onChange={(event) => setFilter(event.target.value.trim() || null)}
-        placeholder='Busca tu comida'
+        placeholder='🔎 Busca tu comida'
         type="search" />
     </header>
   )
