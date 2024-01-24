@@ -117,7 +117,7 @@ console.log("state",state)
 //funcion para mostrar alerta al agregar producto al carrito
   const mostrarAlert=()=>{
     swal.fire({
-      text: "Se ha añadidó al carrito",
+      text: "Se ha añadido al carrito",
       icon: "success",
       toast: true,
       position: 'top',
