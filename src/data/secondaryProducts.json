@@ -12,7 +12,7 @@
         { "id":39,"name": "Cocacola 3LitroS", "price":10, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2bac3d185580241.65870868a7d80.png" },
         { "id":40,"name": "Hit Personal", "price":4, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/df33a7185580241.65870868aae9d.png" },
         { "id":41,"name": "Hit Caja", "price":6, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/178204185580241.65870868ab83c.png" },
-        { "id":42,"name": "Cerveza Lata", "price":3, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a7fb60185580241.65870868aa2d8.png" },
+        { "id":42,"name": "Cerveza Lata", "price":3.5, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a7fb60185580241.65870868aa2d8.png" },
         { "id":43,"name": "Agua Botella", "price":2, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/44e0e1185580241.65870868ac2b3.png" }
       ]
     },
@@ -26,11 +26,11 @@
       ]
     },
     {
-      "category": "Para Niños",
+      "category": "Niños",
       "categoryImg": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7b6935185580241.65885f2f32544.png",
 
       "products": [
-        { "id":47,"name": "Mini Hamburguesas", "price":8, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7b6935185580241.65885f2f32544.png" }
+        { "id":47,"name": "Mini Hamburguesas", "price":9, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7b6935185580241.65885f2f32544.png" }
        ]
     },
     {
@@ -38,9 +38,11 @@
       "categoryImg": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5f1fd9185580241.65884deb48b0f.png",
 
       "products": [
-        { "id":48,"name": "Choripan", "price":7, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/461f11185580241.65884deb4a2c5.png" },
-        { "id":49,"name": "Picada mixta", "price":22,  "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5f1fd9185580241.65884deb48b0f.png" },
-      { "id":50,"name": "Papas y carne", "price":9, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/82cc25185580241.65884deb4949f.png" },
+        { "id":48,"name": "Desgranado sencillo", "price":12, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0c212b185580241.65d276ffc7f2a.png" },
+        { "id":48,"name": "Desgranado de la Casa", "price":15, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ee2513185580241.65d2761c6472f.png" },
+        { "id":48,"name": "Papas locas", "price":10, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/18a83d185580241.65d2787f52f55.png" },
+        { "id":48,"name": "Choripan", "price":8, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/461f11185580241.65884deb4a2c5.png" },
+        { "id":49,"name": "Picada mixta", "price":24,  "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5f1fd9185580241.65884deb48b0f.png" },
         { "id":51,"name": "Choripapa", "price":9, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/08ece6185580241.65884deb47eb1.png" }
       ]
     },
@@ -51,7 +53,6 @@
         { "id":52,"name": "Adición de Queso", "price":1, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4583c6185580241.658858635a54b.png" },
         { "id":53,"name": "Adición de Maiz",  "price":1, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f2e88c185580241.658858635aea5.png" },
         { "id":54,"name": "Adición de Tocineta", "price":2, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/d4e43d185580241.65886218cc534.png" },
-        { "id":55,"name": "Adición de Guacamole", "price":2, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/829612185580241.6588586359054.png" },
         { "id":56,"name": "Adición de Chicharrón", "price":2, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8085fd185580241.65885c0bed8b8.png" },
         { "id":57,"name": "Adición de Cebolla Dulce", "price":2, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/605717185580241.658860c31fd8b.png" },
         { "id":58,"name": "Adición de Pico de Gallo", "price":2, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/10e700185580241.65885c0bece92.png" }
