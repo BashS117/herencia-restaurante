@@ -35,7 +35,7 @@ const Home = () => {
       <h2 className="text-2xl font-semibold text-gray-700 bg-gray-200 p-2 rounded-md">{title}</h2>
       <div className="mt-4 flex flex-wrap gap-6">
         {items.map((category, index) => (
-          <div key={index} className="flex-1 min-w-[180px] bg-white shadow-md rounded-lg overflow-hidden">
+          <div key={index} className="flex-1 min-w-[160px] bg-white shadow-md rounded-lg overflow-hidden">
             <h3 className="bg-gray-300 p-3 text-xl font-medium text-gray-800">{category.title}</h3>
             <ul className="p-4 space-y-2">
               {category.dishes.map((dish, idx) => (
