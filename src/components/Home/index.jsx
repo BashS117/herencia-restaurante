@@ -5,6 +5,8 @@ import FilterResult from '../FilterResult'
 import AcordionPanel from '../AcordionPanel'
 import { AppContext } from '../../Context/AppContext'
 import { useContext,useState } from 'react'
+import MenuSlider from '../MenuSlider'
+import MenuCategory from '../MenuCategory'
 const Home = () => {
 
   const {filteredProducts}= useContext(AppContext)
@@ -29,45 +31,11 @@ const Home = () => {
     }
   
   }
-  function MenuCategory({ title, items }) {
-    return (
-      <section>
-      <h2 className="text-2xl font-semibold text-gray-700 bg-gray-200 p-2 rounded-md">{title}</h2>
-      <div className="mt-4 flex flex-wrap gap-6">
-        {items.map((category, index) => (
-          <div key={index} className="flex-1 min-w-[160px] bg-white shadow-md rounded-lg overflow-hidden">
-            <h3 className="bg-gray-300 p-3 text-xl font-medium text-gray-800">{category.title}</h3>
-            <ul className="p-4 space-y-2">
-              {category.dishes.map((dish, idx) => (
-                <DishItem key={idx} name={dish.name} details={dish.details} />
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </section>
-    );
-  }
-
-  function DishItem({ name, details }) {
-    const [isOpen, setIsOpen] = useState(false);
   
-    return (
-      <li className="cursor-pointer text-gray-600">
-        <div onClick={() => setIsOpen(!isOpen)} className="flex justify-between items-center p-2 bg-gray-100 rounded-md hover:bg-gray-200">
-          <span>{name}</span>
-          <span>{isOpen ? '−' : '+'}</span>
-        </div>
-        {isOpen && (
-          <div className="p-2 mt-2 bg-gray-50 border border-gray-300 rounded-md">
-            <p>{details}</p>
-          </div>
-        )}
-      </li>
-    );
-  }
+ 
 
   return (<section className='px-2'>
+    <MenuSlider/>
             <div className="space-y-8">
           <MenuCategory
             title="Platos Fuertes"
