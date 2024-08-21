@@ -19,15 +19,15 @@ const Header = () => {
                 
             </div>
             <div className='flex gap-1 items-end justify-evenly'>
-                    <p className='text-[0.8rem] bg-[#FFC107] rounded-sm px-1 text-white  '>Cra 8 #6-44 Corinto</p>
-                    <p  className='text-[0.8rem]  bg-[#FFC107] rounded-sm px-1 text-white '>Cel: 322 533 4974</p>
+                    <p className='text-[0.8rem] bg-dark-gray rounded-sm px-1 text-white  '>Cra 8 #6-44 Corinto</p>
+                    <p  className='text-[0.8rem]  bg-dark-gray rounded-sm px-1 text-white '>Cel: 322 533 4974</p>
                 </div>
             <ul className='text-[0.7rem] px-4 justify-between flex'>
                     <li> 1. Elige categoría y escoge tu producto</li>
                     <li> 2. Envia tu pedido y espera tu domicilio</li>
                 </ul>
         </div>
-        <input className='w-[80%] h-[30px] mt-2 py-1 pr-1 text-[1.4rem]' 
+        <input className='w-[95%] h-[30px] mt-2 py-1 pr-1 text-[1.4rem]' 
         onChange={(event) => setFilter(event.target.value.trim() || null)}
         placeholder='🔎 Busca tu comida'
         type="search" />

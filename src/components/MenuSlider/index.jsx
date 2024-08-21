@@ -13,7 +13,7 @@ const MenuSlider = () => {
           className={`px-4 py-2 rounded-full whitespace-nowrap ${
             active === category
               ? " text-white bg-[#cea648]"
-              : "bg-gray-200 text-gray-700"
+              : "bg-white"
           }`}
           onClick={() => setActive(category)}
         >

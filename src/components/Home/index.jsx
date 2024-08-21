@@ -46,9 +46,9 @@ const Home = () => {
                 { name: 'MINCHO', details: 'Churrasco lomo caracho, 350gr previamente marinado, asado a a la parrilla acompañado de papas a la francesa y ensalada.' }
               ] },
               { title: 'Cerdo', dishes: [
+                { name: 'DON JACOBITO', details: 'Tomahawk de cerdo chimichurri acompañado de cremoso de papa y ensalada.' },
                 { name: 'LA CAPITANA', details: 'Medallones de cedo de 150gr en una salsa criolla de lulo con BBQ, acompañado de papas a la francesa y ensalada.' },
                 { name: 'LEOPOLDINA', details: 'Cerdo agridulce - lomo de cerdo troceado, salteado acompañado de una causa limeña y salsa agridulce con vegetales.' },
-                { name: 'DON JACOBITO', details: 'Tomahawk de cerdo chimichurri acompañado de cremoso de papa y ensalada.' }
               ] },
               { title: 'Pollo', dishes: [
                 { name: 'GALLETA', details: '300gr - filete de pollo previamente marinado, acompañado de papas a la francesa, ensalada y chimichurri.' },
