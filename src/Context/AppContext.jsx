@@ -128,6 +128,9 @@ console.log("state",state)
     
     })
   }
+
+  const [active, setActive] = useState("Menu rapido");
+
 return (
     <AppContext.Provider value={
         {
@@ -135,7 +138,8 @@ return (
             removeFromCart,
             setFilter,
             filteredProducts,
-            mostrarAlert
+            mostrarAlert,
+            active,setActive
         }
     }>
 {children}

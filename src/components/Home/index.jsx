@@ -9,7 +9,7 @@ import MenuSlider from '../MenuSlider'
 import MenuCategory from '../MenuCategory'
 const Home = () => {
 
-  const {filteredProducts}= useContext(AppContext)
+  const {filteredProducts,active}= useContext(AppContext)
   console.log("PRODUCTOS FILTRADOS: ",filteredProducts)
 
   const renderFilter =()=>{
@@ -34,10 +34,10 @@ const Home = () => {
   
  
 
-  return (<section className='px-2'>
+  return (<section className='px-0'>
     <MenuSlider/>
             <div className="space-y-8">
-          <MenuCategory
+         {active==='Platos fuertes'? <MenuCategory
             title="Platos Fuertes"
             items={[
               { title: 'Res', dishes: [
@@ -56,8 +56,8 @@ const Home = () => {
                 { name: 'UVITA', details: '300gr - filete de pollo previamente marinado, bañado en una demiglace de frutos rojos, acompañado de papas a la francesa y ensalada' }
               ] }
             ]}
-          />
-          <MenuCategory
+          />:null}
+      {active==='Menu rapido'?    <MenuCategory
             title="Menú Normal"
             items={[
               { title: 'Sandwiches', dishes: [
@@ -88,7 +88,7 @@ const Home = () => {
                 { name: 'Ala 5', details: 'Detalles de la Ala 5' }
               ] }
             ]}
-          />
+          />:null}
         </div>
 
   </section>

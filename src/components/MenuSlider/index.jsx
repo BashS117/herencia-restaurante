@@ -1,12 +1,15 @@
-import React, { useState } from "react";
-
+import React, { useState } from "react"
+import { useContext } from "react";
+import { AppContext } from "../../Context/AppContext";
 const MenuSlider = () => {
-  const [active, setActive] = useState("Menu rapido");
+
+  
+  const {active,setActive}= useContext(AppContext)
 
   const categories = ["Menu rapido", "Platos fuertes", "Bebidas", ];
 
   return (
-    <div className="flex overflow-x-auto space-x-4 p-4 scrollbar-hide">
+    <div className="flex overflow-x-auto space-x-4 p-2 scrollbar-hide">
       {categories.map((category) => (
         <button
           key={category}
