@@ -1,7 +1,29 @@
 import React, { useState } from "react";
+import { useContext } from "react";
+import { AppContext } from '../../Context/AppContext';
 
 function DishItem({ dish,name,details }) {
   const [liked, setLiked] = useState(false);
+  const {dispatch}= useContext(AppContext)
+
+   //funcion para agregar  un producto al carrito 
+   const addToCart = (name)=>{
+    const itemToAdd = {
+      // id: id,
+      name: name,
+      // image:image,
+      price: 20000,
+      quantity:1,
+      //otras propiedades
+    }
+  //Despacho la accion  add_to_ cart con el item como payload
+  dispatch({
+    type:'ADD_TO_CART', 
+    payload: itemToAdd
+  })
+// Muestro una alerta al usuario
+// mostrarAlert()   
+}
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-md min-w-[180px] h-[auto]">
@@ -28,9 +50,11 @@ function DishItem({ dish,name,details }) {
 
       <div className="flex items-center justify-between"> 
       <p className="text-lg font-semibold mt-2">20.000$</p>
-      <button className=" w-[30px] h-[30px] bg-[#cea648] text-white  rounded-md hover:bg-red-700 ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+      <button 
+         onClick={() => addToCart(name)}
+        className=" w-[30px] h-[30px] bg-[#cea648] text-white  rounded-md hover:bg-red-700 ">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
         </svg>
       </button>
       </div>
