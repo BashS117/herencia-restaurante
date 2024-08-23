@@ -21,11 +21,13 @@ export const AppProvider =({children})=>{
   const [filter, setFilter] = useState(null);
      //productos filtrados
      const [filteredProducts,setFilteredProducts]=useState(null);
+//categoria activa
+     const [active, setActive] = useState("Menu rapido");
 
 
 
      const filteredProductsByTitle = (allProducts, filter) => {
-      return allProducts.flatMap(category => category.products.filter(item => item.name.toLowerCase().includes(filter.toLowerCase())));
+      return allProducts.flatMap(category => category.dishes.filter(item => item.name.toLowerCase().includes(filter.toLowerCase())));
     };
 
   const filterBy = (searchType,allProducts,filter)=>{
@@ -41,9 +43,13 @@ export const AppProvider =({children})=>{
 
   useEffect(() => {
     if(!filter)setFilteredProducts(null)
-    if (filter) setFilteredProducts(filterBy('BY_TITLE', allProducts, filter, ))
+    if (filter){
+      setFilteredProducts(filterBy('BY_TITLE', allProducts, filter, ))
+  }
+  // if(active){setFilter(null)}
   
-}, [ filter])
+  
+}, [ filter,active])
 
 
 
@@ -129,7 +135,6 @@ console.log("state",state)
     })
   }
 
-  const [active, setActive] = useState("Menu rapido");
 
 return (
     <AppContext.Provider value={

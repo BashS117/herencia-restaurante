@@ -1,75 +1,53 @@
 [
-    {
-      "category": "Hamburguesas",
-      "categoryImg": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3ee19c185580241.65675bb1bb62f.jpg",
-
-      "products": [
-        { "id":1,"name": "Hamburguesa Clásica", "price":13, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3ee19c185580241.65675bb1bb62f.jpg" },
-        { "id":3,"name": "Hamburguesa de Cerdo", "price":15, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fea976185580241.65d2761c657fb.png" },
-        { "id":2,"name": "Hamburguesa Doble Carne", "price":16, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8c027a185580241.6585b2a31eb56.png" },
-        { "id":3,"name": "Hamburguesa Mixta", "price":16,  "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3ee19c185580241.65675bb1bb62f.jpg" },
-        { "id":4,"name": "Hamburguesa Triple", "price":22, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c9ccf9185580241.6585b99d20dc8.png" },
-        { "id":5,"name": "Porción papa", "price":2, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3ee19c185580241.65675bb1bb62f.jpg" }
-      ]
-    },
-    {
-      "category": "Salchipapas",
-      "categoryImg": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/878895185580241.65858fb6abf84.png",
-
-      "products": [
-        { "id":6,"name": "Salchipapa Sencilla", "price":6, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/878895185580241.65858fb6abf84.png" },
-        { "id":7,"name": "Salchipapa de Pollo", "price":8, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/878895185580241.65858fb6abf84.png" },
-        { "id":8,"name": "Salchipapa y Tocineta", "price":8, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/878895185580241.65858fb6abf84.png" },
-        { "id":9,"name": "Salchipapa Pollo y Tocineta", "price":9, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/878895185580241.65858fb6abf84.png" },
-        { "id":10,"name": "Salchipapa Maiz y Pollo", "price":9, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/878895185580241.65858fb6abf84.png" },
-        { "id":11,"name": "Salchipapa de Carne", "price":9, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/878895185580241.65858fb6abf84.png" },
-        { "id":12,"name": "Salchipapa Carne y Tocineta", "price":10, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/878895185580241.65858fb6abf84.png" },
-        { "id":13,"name": "Salchipapa Con chorizo", "price":11, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/878895185580241.65858fb6abf84.png" },
-        { "id":14,"name": "Salchipapa Familiar", "price":25, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/878895185580241.65858fb6abf84.png" }
-      ]
-    },
-    {
-      "category": "Burritos",
-      "categoryImg": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a4e34a185580241.65858fb6acd0a.png",
-
-      "products": [
-        { "id":15,"name": "Burrito de Pollo", "price":10, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a4e34a185580241.65858fb6acd0a.png" },
-        { "id":16,"name": "Burrito de Carne", "price":10,  "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a4e34a185580241.65858fb6acd0a.png" },
-        { "id":16,"name": "Burrito Mixto", "price":12,  "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a4e34a185580241.65858fb6acd0a.png" },
-        { "id":17,"name": "Burrito Mexicano", "price":12, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a4e34a185580241.65858fb6acd0a.png" },
-        { "id":18,"name": "Burrito de la Casa", "price":12, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a4e34a185580241.65858fb6acd0a.png" }
-      ]
-    },
-    {
-      "category": "Sandwich",
-      "categoryImg": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c40ba7185580241.65858fb6ada14.png",
-      "products": [
-        { "id":19,"name": "Sandwich de Pollo", "price":10, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c40ba7185580241.65858fb6ada14.png" },
-        { "id":20,"name": "Sandwich Mixto",  "price":12, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c40ba7185580241.65858fb6ada14.png" },
-        { "id":21,"name": "Sandwich Mexicano", "price":12, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c40ba7185580241.65858fb6ada14.png" },
-        { "id":22,"name": "Sandwich de Jamón", "price":8, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c40ba7185580241.65858fb6ada14.png" }
-      ]
-    },
-    {
-      "category": "Aplastados",
-      "categoryImg": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ada19e185580241.65858fb6ab1d1.png",
-      "products": [
-        { "id":23,"name": "Aplastado de Pollo", "price":10, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ada19e185580241.65858fb6ab1d1.png" },
-        { "id":24,"name": "Aplastado Mixto",  "price":12, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ada19e185580241.65858fb6ab1d1.png" },
-        { "id":25,"name": "Aplastado Mexicano", "price":12, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ada19e185580241.65858fb6ab1d1.png" },
-        { "id":26,"name": "Aplastado de Jamón", "price":8, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ada19e185580241.65858fb6ab1d1.png" }
+  {
+    "title": "Res",
+    "dishes": [
+      {
+        "name": "TINDARINDA - Seviche de Punta de Anca",
+        "details": "300gr de punta de anca en una cama de guacamole, acompañado de papas criollas y pico de gallo."
+      },
+      {
+        "name": "PISPIRISPI",
+        "details": "Lomo fino salteado en salsa soja y vegetales, acompañado de un cremoso de papa y crocante de platano."
+      },
+      {
+        "name": "MINCHO",
+        "details": "Churrasco lomo caracho, 350gr previamente marinado, asado a a la parrilla acompañado de papas a la francesa y ensalada."
+      }
     ]
-    },
-    {
-      "category": "Perros",
-      "categoryImg": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4288be185580241.65858fb6aa6e9.png",
-      "products": [
-        { "id":27,"name": "Perro Sencillo", "price":9, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4288be185580241.65858fb6aa6e9.png"},
-        { "id":28,"name": "Perro de Pollo", "price":11, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4288be185580241.65858fb6aa6e9.png"},
-        { "id":29,"name": "Perro de Carne", "price":11,  "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4288be185580241.65858fb6aa6e9.png"},
-        { "id":30,"name": "Perro Mexicano", "price":12, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4288be185580241.65858fb6aa6e9.png"},
-        { "id":31,"name": "Perro De la Casa", "price":12, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4288be185580241.65858fb6aa6e9.png"},
-        { "id":32,"name": "Perro Mixto", "price":12, "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4288be185580241.65858fb6aa6e9.png"}
-      ]
-    }
-  ]
+  },
+  {
+    "title": "Cerdo",
+    "dishes": [
+      {
+        "name": "DON JACOBITO",
+        "details": "Tomahawk de cerdo chimichurri acompañado de cremoso de papa y ensalada."
+      },
+      {
+        "name": "LA CAPITANA",
+        "details": "Medallones de cedo de 150gr en una salsa criolla de lulo con BBQ, acompañado de papas a la francesa y ensalada."
+      },
+      {
+        "name": "LEOPOLDINA",
+        "details": "Cerdo agridulce - lomo de cerdo troceado, salteado acompañado de una causa limeña y salsa agridulce con vegetales."
+      }
+    ]
+  },
+  {
+    "title": "Pollo",
+    "dishes": [
+      {
+        "name": "GALLETA",
+        "details": "300gr - filete de pollo previamente marinado, acompañado de papas a la francesa, ensalada y chimichurri."
+      },
+      {
+        "name": "BOMBA",
+        "details": "300gr - filete de pollo previamente marinado, bañado en salsa de maíz tierno y tocineta, acompañado de papas a la francesa y ensalada."
+      },
+      {
+        "name": "UVITA",
+        "details": "300gr - filete de pollo previamente marinado, bañado en una demiglace de frutos rojos, acompañado de papas a la francesa y ensalada."
+      }
+    ]
+  }
+]
