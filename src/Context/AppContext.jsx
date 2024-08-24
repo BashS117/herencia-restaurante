@@ -19,6 +19,10 @@ export const AppProvider =({children})=>{
 
   // Estado para el valor del input de filtrado
   const [filter, setFilter] = useState(null);
+  console.log(filter)
+  //estado del input
+  const [inputValue, setInputValue] = useState("");
+  console.log(inputValue)
      //productos filtrados
      const [filteredProducts,setFilteredProducts]=useState(null);
 //categoria activa
@@ -42,14 +46,18 @@ export const AppProvider =({children})=>{
 }
 
   useEffect(() => {
-    if(!filter)setFilteredProducts(null)
+    if(!filter){
+      setFilteredProducts(null)
+    }
+    if(inputValue==='' && !active){setActive('Menu rapido')}
     if (filter){
       setFilteredProducts(filterBy('BY_TITLE', allProducts, filter, ))
+      setActive(null)
   }
   // if(active){setFilter(null)}
   
   
-}, [ filter,active])
+}, [ filter])
 
 
 
@@ -141,10 +149,14 @@ return (
         {
             state,dispatch,
             removeFromCart,
+            filter,
             setFilter,
             filteredProducts,
+            setFilteredProducts,
             mostrarAlert,
-            active,setActive
+            active,setActive,
+            inputValue,
+            setInputValue
         }
     }>
 {children}

@@ -1,9 +1,17 @@
 import React from 'react'
+import { useState } from 'react'
 import { AppContext } from '../../Context/AppContext'
 import { useContext } from 'react'
 
 const Header = () => {
-    const {setFilter}=useContext(AppContext)
+    const { setFilter,inputValue,setInputValue } = useContext(AppContext);
+
+
+    const handleChange = (event) => {
+        const value = event.target.value.trim();
+        setInputValue(value);
+        setFilter(value || null);
+      };
   return (
     <header className='w-full'>
         <div className='flex flex-col justify-between '>
@@ -27,8 +35,10 @@ const Header = () => {
                     <li> 2. Envia tu pedido y espera tu domicilio</li>
                 </ul>
         </div>
-        <input className='w-[95%] h-[30px] mt-2 py-1 pr-1 text-[1.4rem]' 
-        onChange={(event) => setFilter(event.target.value.trim() || null)}
+        <input 
+        className='w-[95%] h-[30px] mt-2 py-1 pr-1 text-[1.4rem]' 
+        value={inputValue}
+        onChange={handleChange}
         placeholder='🔎 Busca tu comida'
         type="search" />
     </header>

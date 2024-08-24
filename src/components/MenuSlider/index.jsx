@@ -4,9 +4,16 @@ import { AppContext } from "../../Context/AppContext";
 const MenuSlider = () => {
 
   
-  const {active,setActive}= useContext(AppContext)
+  const {active,setActive,setFilteredProducts,setFilter,setInputValue}= useContext(AppContext)
 
   const categories = ["Menu rapido", "Platos fuertes", "Bebidas", ];
+
+  const handleCategoryChange = (category) => {
+    setActive(category);
+    setFilteredProducts(null);
+    setFilter(null); // Esto borra el estado de búsqueda
+    setInputValue('')
+  };
 
   return (
     <div className="flex overflow-x-auto space-x-4 p-2 scrollbar-hide">
@@ -18,7 +25,8 @@ const MenuSlider = () => {
               ? " text-white bg-[#cea648]"
               : "bg-white"
           }`}
-          onClick={() => setActive(category)}
+          onClick={() => handleCategoryChange(category)
+          }
         >
           {category}
         </button>
