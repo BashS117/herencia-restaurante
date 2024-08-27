@@ -11,6 +11,7 @@ function MenuCategory({ title, items }) {
               {category.dishes.map((dish, idx) => (
                 <DishItem 
                 key={idx} 
+                id={dish.id} 
                 name={dish.name} 
                 details={dish.details} 
                 price={dish.price}

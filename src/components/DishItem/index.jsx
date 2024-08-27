@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import { useContext } from "react";
 import { AppContext } from '../../Context/AppContext';
 
-function DishItem({ name,details,price,urlImage }) {
+function DishItem({ name,details,price,urlImage,id }) {
   const [liked, setLiked] = useState(false);
+  
   const {dispatch}= useContext(AppContext)
 
    //funcion para agregar  un producto al carrito 
-   const addToCart = (name)=>{
+   const addToCart = (name,price,urlImage,id)=>{
     const itemToAdd = {
-      // id: id,
+      id: id,
       name: name,
-      // image:image,
-      price: 20000,
+      image:urlImage,
+      price: price,
       quantity:1,
       //otras propiedades
     }
@@ -51,7 +52,7 @@ function DishItem({ name,details,price,urlImage }) {
       <div className="flex items-center justify-between"> 
       <p className="text-lg font-semibold mt-2">{price}</p>
       <button 
-         onClick={() => addToCart(name)}
+         onClick={() => addToCart(name,price,urlImage,id)}
         className=" w-[30px] h-[30px] bg-[#cea648] text-white  rounded-md hover:bg-red-700 ">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />

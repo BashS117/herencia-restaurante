@@ -3,18 +3,21 @@
     "title": "Res",
     "dishes": [
       {
+        "id": 20,
         "name": "TINDARINDA - Seviche de Punta de Anca",
         "details": "300gr de punta de anca en una cama de guacamole, acompañado de papas criollas y pico de gallo.",
         "price": 20000,
         "urlImage": "https://example.com/tindarinda.jpg"
       },
       {
+        "id": 21,
         "name": "PISPIRISPI",
         "details": "Lomo fino salteado en salsa soja y vegetales, acompañado de un cremoso de papa y crocante de platano.",
         "price": 20000,
         "urlImage": "https://example.com/pispirisp.jpg"
       },
       {
+        "id": 22,
         "name": "MINCHO",
         "details": "Churrasco lomo caracho, 350gr previamente marinado, asado a a la parrilla acompañado de papas a la francesa y ensalada.",
         "price": 20000,
@@ -26,18 +29,21 @@
     "title": "Cerdo",
     "dishes": [
       {
+        "id": 23,
         "name": "DON JACOBITO",
         "details": "Tomahawk de cerdo chimichurri acompañado de cremoso de papa y ensalada.",
         "price": 20000,
         "urlImage": "https://example.com/donjacobito.jpg"
       },
       {
+        "id": 24,
         "name": "LA CAPITANA",
         "details": "Medallones de cedo de 150gr en una salsa criolla de lulo con BBQ, acompañado de papas a la francesa y ensalada.",
         "price": 20000,
         "urlImage": "https://example.com/lacapitana.jpg"
       },
       {
+        "id": 25,
         "name": "LEOPOLDINA",
         "details": "Cerdo agridulce - lomo de cerdo troceado, salteado acompañado de una causa limeña y salsa agridulce con vegetales.",
         "price": 20000,
@@ -49,18 +55,21 @@
     "title": "Pollo",
     "dishes": [
       {
+        "id": 26,
         "name": "GALLETA",
         "details": "300gr - filete de pollo previamente marinado, acompañado de papas a la francesa, ensalada y chimichurri.",
         "price": 20000,
         "urlImage": "https://example.com/galleta.jpg"
       },
       {
+        "id": 27,
         "name": "BOMBA",
         "details": "300gr - filete de pollo previamente marinado, bañado en salsa de maíz tierno y tocineta, acompañado de papas a la francesa y ensalada.",
         "price": 20000,
         "urlImage": "https://example.com/bomba.jpg"
       },
       {
+        "id": 28,
         "name": "UVITA",
         "details": "300gr - filete de pollo previamente marinado, bañado en una demiglace de frutos rojos, acompañado de papas a la francesa y ensalada.",
         "price": 20000,
