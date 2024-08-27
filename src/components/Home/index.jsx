@@ -1,8 +1,5 @@
 import React from 'react'
-import AcordionLeft from '../AcordionLeft'
-import AcordionRight from '../AcordionRight'
 import FilterResult from '../FilterResult'
-import AcordionPanel from '../AcordionPanel'
 import { AppContext } from '../../Context/AppContext'
 import { useContext,useState } from 'react'
 import MenuSlider from '../MenuSlider'

@@ -4,23 +4,33 @@
     "dishes": [
       {
         "name": "Sandwich 1",
-        "details": "Detalles del Sandwich 1"
+        "details": "Detalles del Sandwich 1",
+        "price": 20000,
+        "urlImage": "https://example.com/sandwich1.jpg"
       },
       {
         "name": "Sandwich 2",
-        "details": "Detalles del Sandwich 2"
+        "details": "Detalles del Sandwich 2",
+        "price": 20000,
+        "urlImage": "https://example.com/sandwich2.jpg"
       },
       {
         "name": "Sandwich 3",
-        "details": "Detalles del Sandwich 3"
+        "details": "Detalles del Sandwich 3",
+        "price": 20000,
+        "urlImage": "https://example.com/sandwich3.jpg"
       },
       {
         "name": "Sandwich 4",
-        "details": "Detalles del Sandwich 4"
+        "details": "Detalles del Sandwich 4",
+        "price": 20000,
+        "urlImage": "https://example.com/sandwich4.jpg"
       },
       {
         "name": "Sandwich 5",
-        "details": "Detalles del Sandwich 5"
+        "details": "Detalles del Sandwich 5",
+        "price": 20000,
+        "urlImage": "https://example.com/sandwich5.jpg"
       }
     ]
   },
@@ -29,19 +39,27 @@
     "dishes": [
       {
         "name": "Pan Cook 1",
-        "details": "Detalles del Pan Cook 1"
+        "details": "Detalles del Pan Cook 1",
+        "price": 20000,
+        "urlImage": "https://example.com/pancook1.jpg"
       },
       {
         "name": "Pan Cook 2",
-        "details": "Detalles del Pan Cook 2"
+        "details": "Detalles del Pan Cook 2",
+        "price": 20000,
+        "urlImage": "https://example.com/pancook2.jpg"
       },
       {
         "name": "Pan Cook 3",
-        "details": "Detalles del Pan Cook 3"
+        "details": "Detalles del Pan Cook 3",
+        "price": 20000,
+        "urlImage": "https://example.com/pancook3.jpg"
       },
       {
         "name": "Pan Cook 4",
-        "details": "Detalles del Pan Cook 4"
+        "details": "Detalles del Pan Cook 4",
+        "price": 20000,
+        "urlImage": "https://example.com/pancook4.jpg"
       }
     ]
   },
@@ -50,23 +68,33 @@
     "dishes": [
       {
         "name": "Hamburguesa 1",
-        "details": "Detalles de la Hamburguesa 1"
+        "details": "Detalles de la Hamburguesa 1",
+        "price": 20000,
+        "urlImage": "https://example.com/hamburguesa1.jpg"
       },
       {
         "name": "Hamburguesa 2",
-        "details": "Detalles de la Hamburguesa 2"
+        "details": "Detalles de la Hamburguesa 2",
+        "price": 20000,
+        "urlImage": "https://example.com/hamburguesa2.jpg"
       },
       {
         "name": "Hamburguesa 3",
-        "details": "Detalles de la Hamburguesa 3"
+        "details": "Detalles de la Hamburguesa 3",
+        "price": 20000,
+        "urlImage": "https://example.com/hamburguesa3.jpg"
       },
       {
         "name": "Hamburguesa 4",
-        "details": "Detalles de la Hamburguesa 4"
+        "details": "Detalles de la Hamburguesa 4",
+        "price": 20000,
+        "urlImage": "https://example.com/hamburguesa4.jpg"
       },
       {
         "name": "Hamburguesa 5",
-        "details": "Detalles de la Hamburguesa 5"
+        "details": "Detalles de la Hamburguesa 5",
+        "price": 20000,
+        "urlImage": "https://example.com/hamburguesa5.jpg"
       }
     ]
   },
@@ -75,23 +103,33 @@
     "dishes": [
       {
         "name": "Ala 1",
-        "details": "Detalles de la Ala 1"
+        "details": "Detalles de la Ala 1",
+        "price": 20000,
+        "urlImage": "https://example.com/ala1.jpg"
       },
       {
         "name": "Ala 2",
-        "details": "Detalles de la Ala 2"
+        "details": "Detalles de la Ala 2",
+        "price": 20000,
+        "urlImage": "https://example.com/ala2.jpg"
       },
       {
         "name": "Ala 3",
-        "details": "Detalles de la Ala 3"
+        "details": "Detalles de la Ala 3",
+        "price": 20000,
+        "urlImage": "https://example.com/ala3.jpg"
       },
       {
         "name": "Ala 4",
-        "details": "Detalles de la Ala 4"
+        "details": "Detalles de la Ala 4",
+        "price": 20000,
+        "urlImage": "https://example.com/ala4.jpg"
       },
       {
         "name": "Ala 5",
-        "details": "Detalles de la Ala 5"
+        "details": "Detalles de la Ala 5",
+        "price": 20000,
+        "urlImage": "https://example.com/ala5.jpg"
       }
     ]
   }

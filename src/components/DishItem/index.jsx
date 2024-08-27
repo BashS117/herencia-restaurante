@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useContext } from "react";
 import { AppContext } from '../../Context/AppContext';
 
-function DishItem({ dish,name,details }) {
+function DishItem({ name,details,price,urlImage }) {
   const [liked, setLiked] = useState(false);
   const {dispatch}= useContext(AppContext)
 
@@ -29,8 +29,8 @@ function DishItem({ dish,name,details }) {
     <div className="bg-white p-4 rounded-lg shadow-md min-w-[180px] h-[auto]">
       <div className="relative">
         <img
-        //   src={dish.image}
-        //   alt={dish.name}
+          src={urlImage}
+          alt={name}
           className="w-full h-40 object-cover rounded-lg"
         />
         {/* <button
@@ -49,7 +49,7 @@ function DishItem({ dish,name,details }) {
       </div>
 
       <div className="flex items-center justify-between"> 
-      <p className="text-lg font-semibold mt-2">20.000$</p>
+      <p className="text-lg font-semibold mt-2">{price}</p>
       <button 
          onClick={() => addToCart(name)}
         className=" w-[30px] h-[30px] bg-[#cea648] text-white  rounded-md hover:bg-red-700 ">

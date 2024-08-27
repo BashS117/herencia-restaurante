@@ -9,7 +9,14 @@ function MenuCategory({ title, items }) {
             <h3 className="bg-gray-300 p-3 text-xl font-medium text-start">{category.title}</h3>
             <ul className="p-2  flex gap-4 overflow-x-auto scrollbar-hide">
               {category.dishes.map((dish, idx) => (
-                <DishItem key={idx} name={dish.name} details={dish.details} />
+                <DishItem 
+                key={idx} 
+                name={dish.name} 
+                details={dish.details} 
+                price={dish.price}
+                urlImage={dish.urlImage}
+                />
+
               ))}
             </ul>
           </div>
