@@ -39,7 +39,7 @@ googleMapsUrl='';
     
 
     //texto link a whatsapp
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=573234754284&text=${googleMapsUrl} %0A*¡Nuevo Pedido!*🛵%0A Restaurante Corralazo %0A*Productos*: %0A ${productsText} %0A*Valor total:* $${sum}000 %0A ${customerNameandAdress} `;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=573225334974&text=${googleMapsUrl} %0A*¡Nuevo Pedido!*🛵%0A Restaurante Corralazo %0A*Productos*: %0A ${productsText} %0A*Valor total:* $${sum}000 %0A ${customerNameandAdress} `;
 
     window.location.href = whatsappUrl; // Redirigir a WhatsApp
 
@@ -53,7 +53,7 @@ googleMapsUrl='';
   };
   
   return (
-    <div className=' w-[full] text-left mb-3'>
+    <div className=' w-[full] text-left mb-3 px-2'>
       <div className='flex flex-col  gap-1 mb-[10px]'>
           <label htmlFor="">Tipo de Pedido</label>
          <select onChange={handleSelectChange} value={selectedOption} id=""
@@ -66,7 +66,7 @@ googleMapsUrl='';
 {selectedOption === "Domicilio"?
  <form 
  onSubmit={handleSubmit(onSubmit)}
- className='border border-orange rounded-lg  p-[10px]' action="">
+ className='border border-dark-gray rounded-lg  p-[10px]' action="">
    <div className=' flex flex-col  gap-1 mb-[10px]'>
      <label htmlFor="">Nombre</label>
      <input className='w-full'
@@ -140,7 +140,7 @@ googleMapsUrl='';
  :
  <form
  onSubmit={handleSubmit(onSubmit)}
- className='border border-orange rounded-lg  p-[10px]' 
+ className='border border-dark-gray  rounded-lg  p-[10px]' 
  >
    <div className=' flex flex-col  gap-1 mb-[10px]'>
      <label htmlFor="">Nombre</label>
