@@ -5,7 +5,7 @@ import { AppContext } from '../../Context/AppContext';
 function DishItem({ name,details,price,urlImage,id }) {
   const [liked, setLiked] = useState(false);
   
-  const {dispatch}= useContext(AppContext)
+  const {dispatch,mostrarAlert}= useContext(AppContext)
 
    //funcion para agregar  un producto al carrito 
    const addToCart = (name,price,urlImage,id)=>{
@@ -22,8 +22,8 @@ function DishItem({ name,details,price,urlImage,id }) {
     type:'ADD_TO_CART', 
     payload: itemToAdd
   })
-// Muestro una alerta al usuario
-// mostrarAlert()   
+//Muestro una alerta al usuario
+mostrarAlert()   
 }
 
   return (
